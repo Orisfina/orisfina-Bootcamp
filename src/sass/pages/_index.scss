@@ -1,0 +1,60 @@
+.header{
+     height: 95vh;
+}
+
+.slideshow{
+     background-image: url('./images/bubbles.png');
+     padding: 0rem 2rem;
+     background-repeat: no-repeat;
+
+     @include respond(tab-land){
+          padding: 0rem 5rem;
+     }
+     @include respond(desktop){
+          padding: 0rem 12rem;
+          background-position: right 50%;
+     }
+
+     &__desc{
+          font-size: 1.5rem;
+          font-weight: 600;
+          line-height: 1.5;
+
+          @include respond(desktop){
+          font-size: 2rem;
+          }
+     }
+
+     &__img{
+          width: 25rem;
+
+          @include respond(desktop){
+               width: 45rem;
+          }
+     }
+     &__side2 {
+          justify-self: end;
+          margin: 0 auto;
+      }
+      &__bar{
+          background: linear-gradient(
+               -45deg
+               , #EE7752, #E73C7E, #23A6D5, #23D5AB);
+                   background-size: 400% 400%;
+                   animation: gradbar 15s ease infinite;
+          // background-color: $black;
+          color: $white;
+          padding: 1rem;
+          margin-top: 11rem;
+          @include respond(desktop){
+          margin-top: 0;
+          }
+      }
+
+      &__side2{
+           @include respond (tab-land){
+           order: 1;
+           }
+}
+}
+

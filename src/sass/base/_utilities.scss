@@ -1,0 +1,85 @@
+/* UTILITIES CLASS */
+.container{
+     padding: $container-mobile;
+
+     @include respond(tab){
+          padding:0 3.5rem;
+     }
+     @include respond(tab-land){
+          padding: 0 4rem;
+     }
+     @include respond(desktop){
+          padding: $container
+     }
+}
+
+.t-center{
+     text-align: center;
+}
+.t-justify{
+     text-align: justify;
+}
+
+.flex{
+     display: flex;
+}
+
+.j-c-sb{
+     justify-content: space-between;
+}
+
+.perfect-center{
+     justify-content: center;
+     align-items: center;
+}
+
+.a-i-center{
+     align-items: center;
+}
+.p{
+      //Padding Bottom Utilities
+     &b-s{
+          padding-bottom: 2rem;
+     }
+     &b-m{
+          padding-bottom: 4rem;
+     }
+     &b-l{
+          padding-bottom: 6rem;
+     }
+
+     //Padding Top Utilities
+     &t-s{
+          padding-top: 2rem;
+     }
+     &t-m{
+          padding-top: 4rem;
+     }
+     &t-l{
+          padding-top: 6rem;
+     }
+}
+
+//Margin utilities Class
+
+.m{
+     &b-s{
+          margin-bottom: 2rem;
+     }
+     &b-m{
+          margin-bottom: 4rem;   
+     }
+     &b-l{
+          margin-bottom: 6rem;
+     }
+
+     &t-s{
+          margin-top: 2rem;
+     }
+     &t-m{
+          margin-top: 4rem;
+     }
+     &t-l{
+          margin-top: 6rem;
+     }
+}

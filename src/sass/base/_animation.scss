@@ -1,0 +1,56 @@
+  /* KEYFRAME ANIMATIONS */
+   
+  @-webkit-keyframes gradbar {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes gradbar {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes gradbar {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+
+/* MOBILE MENU & ANIMATION */
+#mobile-menu.is-active .bar:nth-child(1){
+     -webkit-transform: translateY(8px) rotate(45deg);
+     -ms-transform: translateY(8px) rotate(45deg);
+     -o-transform: translateY(8px) rotate(45deg);
+     transform: translateY(8px) rotate(45deg);
+   }
+   
+   #mobile-menu.is-active .bar:nth-child(3){
+     -webkit-transform: translateY(-8px) rotate(-45deg);
+     -ms-transform: translateY(-8px) rotate(-45deg);
+     -o-transform: translateY(-8px) rotate(-45deg);
+     transform: translateY(-8px) rotate(-45deg);
+   }
+   
+ 
+   

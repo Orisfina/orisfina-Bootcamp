@@ -1,0 +1,13 @@
+
+.primary__header{
+     font-size: 4rem;
+     line-height: 1.2;
+     color: $primary-color-light;
+     font-family: 'Open Sans', sans-serif;
+
+     @include respond(desktop){
+          font-size: 6rem;
+          line-height: 1.2;
+     }
+     
+}
