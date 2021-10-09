@@ -1,19 +1,12 @@
 import React from 'react'
-import {
-     BrowserRouter as Router,
-     // Switch,
-     Route,
-     Link
-   } from "react-router-dom";
 import NavBar from '../components/NavBar'
-import Register from './Register'
-import SlidehowImg from '../images/slideshow_image.png'
 import Section2Img from '../images/section1-image.png'
 import ProjectBox from '../components/ProjectBox';
 import DoYouKnow from '../images/youtube_img-small.png'
 import ProjectImg1 from '../images/project_parallex-small.png'
 import ProjectImg2 from '../images/project_myTunes.png'
 import ProjectImg3 from '../images/project_acme.png'
+import SlideShow from '../components/SlideShow';
 
 function Index() {
      const projectDesc = [
@@ -39,32 +32,13 @@ function Index() {
           <>
           <div className="header">
            <NavBar /> 
-          
-           <section className='slideshow grid2 a-i-center'>
-               <div className="slideshow__side2">
-                    <img src={SlidehowImg} alt="Secure your future by becoming an I.T specialist through Orisfina Bootcamp" className="slideshow__img" />
-               </div>
-                <div className="slideshow__textBox">
-                     <h1 className="primary__header pb-s">
-                          Secure your <br /> Future
-                     </h1>
-                     <p className="slideshow__desc pb-m">
-                         Become a Web Developer, UI/UX <br /> Designer or Graphic Designer from Scratch. <span className="break"> <br />We've got all it takes!</span> 
-                     </p>
-                     <Router>
-                     <Link to="/register" className='btn btn_red'>Register Now</Link>
-                     <Route exact path="/register">
-                         <Register />
-                    </Route>
-                     </Router>
-                </div>
-
-           </section>
-           <div className="slideshow__bar t-center"><p>Trusted by Thousands of Developers</p> </div>
+          <SlideShow />
+           {/* <div className="slideshow__bar t-center"><p>Trusted by Thousands of Developers</p> </div> */}
            </div>
 
            {/* What we about Section */}
-           <section className="light container">
+           <section className="light container ptb-4">
+                <h1 className='primary__text t-center'>Who We Are</h1>
                <div className="grid2 a-i-center">
                     <div className="img-section">
                          <img src={Section2Img} alt="What Orisifna Bootcamp is about" />

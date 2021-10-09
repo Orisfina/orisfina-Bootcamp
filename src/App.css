@@ -15,23 +15,33 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 1.6;
   font-family: 'Montserrat', sans-serif; }
 
 .primary__header {
   font-size: 4rem;
   line-height: 1.2;
-  color: #005055;
+  color: #FEE300;
   font-family: 'Open Sans', sans-serif; }
   @media (min-width: 75em) {
     .primary__header {
       font-size: 6rem;
       line-height: 1.2; } }
 
+.primary__text {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: #001213;
+  font-family: 'Open Sans', sans-serif; }
+  @media (min-width: 75em) {
+    .primary__text {
+      font-size: 4.5rem;
+      line-height: 1.2; } }
+
 /* UTILITIES CLASS */
 .container {
-  padding: 0 2rem; }
+  padding: 0 3rem; }
   @media (min-width: 37.5em) {
     .container {
       padding: 0 3.5rem; } }
@@ -53,6 +63,9 @@ body {
 
 .j-c-sb {
   justify-content: space-between; }
+
+.white {
+  color: #EEF7F8; }
 
 .perfect-center {
   justify-content: center;
@@ -138,7 +151,7 @@ body {
 .btn {
   font-size: 1.4rem;
   text-decoration: none;
-  border: 1px solid #005055;
+  border: 1px solid #3f175d;
   padding: 1.2rem 1.5rem;
   outline: none; }
 
@@ -146,6 +159,21 @@ body {
   background-color: #AB1F1F;
   color: #EEF7F8;
   border: none; }
+
+.regist {
+  color: #EEF7F8;
+  padding: 1.25rem 3.5rem;
+  background-color: #033E42;
+  color: #EEF7F8;
+  margin: 0;
+  border: none; }
+
+.slideshow-main {
+  height: 85vh;
+  background-image: url("/src/images/oci-slide-banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-clip: border-box; }
 
 .grid2 {
   display: grid;
@@ -270,9 +298,6 @@ body {
   .mobile-nav {
     transform: translate(0%) !important; } }
 
-.header {
-  height: 95vh; }
-
 .slideshow {
   background-image: url("./images/bubbles.png");
   padding: 0rem 2rem;
@@ -291,14 +316,6 @@ body {
     @media (min-width: 75em) {
       .slideshow__desc {
         font-size: 2rem; } }
-  .slideshow__img {
-    width: 25rem; }
-    @media (min-width: 75em) {
-      .slideshow__img {
-        width: 45rem; } }
-  .slideshow__side2 {
-    justify-self: end;
-    margin: 0 auto; }
   .slideshow__bar {
     background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
     background-size: 400% 400%;
@@ -309,6 +326,7 @@ body {
     @media (min-width: 75em) {
       .slideshow__bar {
         margin-top: 0; } }
-  @media (min-width: 56.25em) {
-    .slideshow__side2 {
-      order: 1; } }
+
+.light {
+  padding-top: 8rem;
+  padding-bottom: 8rem; }
