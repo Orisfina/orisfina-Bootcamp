@@ -1,0 +1,39 @@
+.footer{
+    background-color: $black;
+    text-align: center;
+    padding: 2rem 3rem;
+    color: $white;
+    text-decoration: none;
+    list-style: none    ;
+}
+
+
+.subFooter{
+    background-color: #19202A;
+    color: $white;
+    padding: 6rem 6rem !important;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+    align-content: center;
+
+    &__heading{
+        padding-bottom: 2rem;
+    }
+    &__list{
+        list-style-type: none;
+
+        & i{padding-right: 1rem;}
+    }
+
+    &__link{
+        text-decoration: none;
+        color:$white;
+    }
+
+    & .followUs, .contactUs
+    {
+        justify-self: center;
+    }
+}

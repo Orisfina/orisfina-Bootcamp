@@ -1,10 +1,10 @@
 import React from 'react'
 
 const Button = (props) => {
-    const {text, name, age, color} = props
+    const {text, cName} = props
     return (
         <div>
-            <button>{text}</button>
+            <button className={cName}>{text}</button>
         </div>
     )
 }

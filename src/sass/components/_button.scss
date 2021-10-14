@@ -1,22 +1,24 @@
 .btn{
      font-size: 1.4rem;
      text-decoration: none;
-     border: 1px solid $primary-color-light;
-     padding: 1.2rem 1.5rem;
      outline: none;
-}
-
-.btn_red{
-     background-color:$red;
-     color: $white;
-     border: none;
-}
-.regist{
-     color: $white;
-     padding: 1.25rem 3.5rem;
-     background-color: $primary-color;
-     color: $white;
      margin: 0;
      border: none;
+     padding: 1.25rem 3.5rem;
 
+&_red{
+     background-color:$red;
+     color: $white;
+}
+&__primary{
+     color: $white;
+     background-color: $primary-color;
+}
+
+&__secondary{
+     color: $primary-color;
+     background-color: $white;
+     padding:1.5rem 3.5rem;
+     font-size: 1.8rem;
+}
 }

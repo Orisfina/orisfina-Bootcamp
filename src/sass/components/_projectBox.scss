@@ -1,6 +1,7 @@
-// .projectBox{
-
-
-
-
-// }
+.projectBox__desc{
+    font-size: 1.2rem;
+    @include respond(tab-land){
+        font-size: 1.6rem;
+    }
+    
+}

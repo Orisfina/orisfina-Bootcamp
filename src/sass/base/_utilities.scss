@@ -16,6 +16,13 @@
 .t-center{
      text-align: center;
 }
+.icon-color{
+     color: $primary-color;
+}
+.bc-primary-color{
+     background-color: $primary-color;
+     color: $white;
+}
 .t-justify{
      text-align: justify;
 }
@@ -31,12 +38,16 @@
      color:$white;
 }
 .perfect-center{
-     justify-content: center;
+     justify-content: center !important;
      align-items: center;
 }
 
 .a-i-center{
      align-items: center;
+}
+
+.bold{
+     font-weight: bold;
 }
 .p{
       //Padding Bottom Utilities
@@ -60,6 +71,9 @@
      &t-l{
           padding-top: 6rem;
      }
+
+     //Left and Right
+     
 }
 
 //Margin utilities Class
@@ -84,4 +98,13 @@
      &t-l{
           margin-top: 6rem;
      }
+}
+
+.font2rem{
+     font-size:2rem
+}
+
+.clip-bg{
+     -webkit-clip-path: polygon(0 0,100% 0,100% 100%,0 90%);
+     clip-path: polygon(0 0,100% 0,100% 100%,0 90%);
 }

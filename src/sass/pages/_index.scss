@@ -1,46 +1,33 @@
-
-.slideshow{
-     background-image: url('./images/bubbles.png');
-     padding: 0rem 2rem;
-     background-repeat: no-repeat;
-
+.fas{
+     display: flex;
+     justify-content: center;
      @include respond(tab-land){
-          padding: 0rem 5rem;
+          justify-content: flex-start;
      }
-     @include respond(desktop){
-          padding: 0rem 12rem;
-          background-position: right 50%;
-     }
-
-     &__desc{
-          font-size: 1.5rem;
-          font-weight: 600;
-          line-height: 1.5;
-
-          @include respond(desktop){
-          font-size: 2rem;
-          }
-     }
-
-
-      &__bar{
-          background: linear-gradient(
-               -45deg
-               , #EE7752, #E73C7E, #23A6D5, #23D5AB);
-                   background-size: 400% 400%;
-                   animation: gradbar 15s ease infinite;
-          // background-color: $black;
-          color: $white;
-          padding: 1rem;
-          margin-top: 11rem;
-          @include respond(desktop){
-          margin-top: 0;
-          }
-      }
-
 }
 
 .light{
-     padding-top:8rem;
-     padding-bottom:8rem;
+     padding: 8rem 4rem;
+     @include respond(tab-land){
+          padding: 8rem 10rem;
+     }
 }
+
+.assurance {
+     padding-left: 3rem;
+     padding-right: 3rem;
+     padding-top: 7rem !important;
+     padding-bottom: 7rem !important;
+
+     &__box{
+          margin-bottom: 7rem;
+          @include respond(desktop){
+               padding: 1rem 5rem;
+          }
+          
+          &--heading{
+               padding-bottom: 2rem;
+               padding-top: 1rem;
+          }
+     }
+ }
