@@ -1,12 +1,12 @@
 .grid2{
      display: grid;
      grid-template-columns: 1fr;
+     row-gap: 4rem;
+     
 
      @include respond(tab-land){
           grid-template-columns: repeat(2, 1fr);
-     }
-     @include respond(phone-m){
-          grid-template-columns: repeat(2, 1fr);
+          column-gap: 9rem;
      }
 }
 
@@ -18,5 +18,6 @@
      @include respond(tab-land){
           grid-template-columns: repeat(3, 1fr);
           column-gap: 6rem;
+          row-gap: 10rem;
      }
 }

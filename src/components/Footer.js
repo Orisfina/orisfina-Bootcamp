@@ -31,15 +31,15 @@ function Footer() {
 				<div class="contactUs">
 					<h3 class="subFooter__heading p-b-small uppercase m-t-medium">Contact Us</h3>
 					<ul>
-						<li class="subFooter__list">
+						<li class="subFooter__list flex a-i-center">
 							<i class="fas fa-map-marker-alt"></i>
 							<span class="subFooter__link">  Back of Mechanic site, Auchi, Edo State Nigeria.</span>
 						</li>
-						<li class="subFooter__list">
+						<li class="subFooter__list flex a-i-center">
 							<i class="fas fa-mobile-alt"></i>
 							<span class="subFooter__link"> +2347032054367, +2347036994665</span>
 						</li>
-						<li class="subFooter__list">
+						<li class="subFooter__list flex a-i-center">
 							<i class="far fa-envelope"></i>
 							<span class="subFooter__link">info@oci.com.ng</span>
 						</li>

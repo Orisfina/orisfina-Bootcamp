@@ -1,4 +1,6 @@
-$primary-color: #033E42;
+// $primary-color: #033E42;
+$primary-color: rgb(0, 136, 204);
+$primary-color-dark: darken(rgb(0, 136, 204), 0.2);
 $primary-color-light :#3f175d; //#005055
 $secondary-color: #00BCC8 ;
 $secondary-color-light: #03C1CD;
@@ -6,9 +8,9 @@ $tertiary-color: #166C4D;
 $dark-green: #166C4D;
 $light-green: #009D52;
 $black: #000D0E;
-$red: #AB1F1F;
+$red: #FF4040;
 $yellow: #FEE300;
 $white: #EEF7F8;
 
-$container: 0 10rem;
+$container: 0 15rem;
 $container-mobile: 0 3rem;

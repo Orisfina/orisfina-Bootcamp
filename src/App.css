@@ -19,15 +19,16 @@ body {
   line-height: 1.6;
   font-family: 'Montserrat', sans-serif; }
 
-h1, h2, h3 {
-  font-family: 'Noto Sans Display', sans-serif; }
-
 section {
   padding-top: 12rem !important;
   padding-bottom: 12rem !important; }
 
 .dark {
   background-color: #F4F4F4; }
+
+p {
+  line-height: 2.8rem;
+  font-family: 'Montserrat', sans-serif; }
 
 .primary__header {
   font-size: 4rem;
@@ -36,17 +37,18 @@ section {
   font-family: 'Open Sans', sans-serif; }
   @media (min-width: 75em) {
     .primary__header {
-      font-size: 6rem;
+      font-size: 5rem;
       line-height: 1.2; } }
 
 .primary__text {
   font-size: 2.5rem;
   line-height: 1.2;
   color: #001213;
-  font-family: 'Noto Sans Display','Open Sans', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800; }
   @media (min-width: 75em) {
     .primary__text {
-      font-size: 4rem;
+      font-size: 3rem;
       line-height: 1.2; } }
 
 .tertiary-header {
@@ -70,16 +72,16 @@ section {
       padding: 0 4rem; } }
   @media (min-width: 75em) {
     .container {
-      padding: 0 10rem; } }
+      padding: 0 15rem; } }
 
 .t-center {
   text-align: center; }
 
 .icon-color {
-  color: #033E42; }
+  color: #0088cc; }
 
 .bc-primary-color {
-  background-color: #033E42;
+  background-color: #0088cc;
   color: #EEF7F8; }
 
 .t-justify {
@@ -147,6 +149,9 @@ section {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%); }
 
+.uppercase {
+  text-transform: uppercase; }
+
 /* KEYFRAME ANIMATIONS */
 @-webkit-keyframes gradbar {
   0% {
@@ -189,20 +194,30 @@ section {
   font-size: 1.4rem;
   text-decoration: none;
   outline: none;
-  margin: 0;
   border: none;
   padding: 1.25rem 3.5rem; }
-  .btn_red {
-    background-color: #AB1F1F;
+  .btn__red {
+    background-color: #FF4040;
     color: #EEF7F8; }
   .btn__primary {
     color: #EEF7F8;
-    background-color: #033E42; }
-  .btn__secondary {
-    color: #033E42;
+    background-color: #0088cc; }
+    .btn__primary:hover {
+      background-color: #0087cb; }
+  .btn__white {
+    color: #0088cc;
     background-color: #EEF7F8;
     padding: 1.5rem 3.5rem;
     font-size: 1.8rem; }
+  .btn__yellow {
+    color: #000D0E;
+    background-color: #FEE300;
+    padding: 1.5rem 3.5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border-radius: 6.8rem; }
+    .btn__yellow:hover {
+      background-color: #f1b826; }
 
 .slideshow-main {
   height: 85vh;
@@ -274,17 +289,19 @@ section {
     text-decoration: none;
     color: #EEF7F8; }
   .subFooter .followUs, .subFooter .contactUs {
-    justify-self: center; }
+    justify-self: flex-start; }
+    @media (min-width: 56.25em) {
+      .subFooter .followUs, .subFooter .contactUs {
+        justify-self: center; } }
 
 .grid2 {
   display: grid;
-  grid-template-columns: 1fr; }
+  grid-template-columns: 1fr;
+  row-gap: 4rem; }
   @media (min-width: 56.25em) {
     .grid2 {
-      grid-template-columns: repeat(2, 1fr); } }
-  @media (min-width: 25.88em) {
-    .grid2 {
-      grid-template-columns: repeat(2, 1fr); } }
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 9rem; } }
 
 .grid3 {
   display: grid;
@@ -293,7 +310,8 @@ section {
   @media (min-width: 56.25em) {
     .grid3 {
       grid-template-columns: repeat(3, 1fr);
-      column-gap: 6rem; } }
+      column-gap: 6rem;
+      row-gap: 10rem; } }
 
 /* BASIC SETUP */
 .page-wrapper {
@@ -350,14 +368,14 @@ section {
   justify-self: end; }
 
 .nav-item {
-  color: #005055;
+  color: #000D0E;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 800;
   text-decoration: none;
   transition: color 0.3s ease-out; }
 
 .nav-item:hover {
-  color: #3498db;
+  color: #0085c8;
   font-weight: 700; }
 
 /* MOBILE MENU & ANIMATION */
@@ -417,12 +435,6 @@ section {
   @media (min-width: 56.25em) {
     .fas {
       justify-content: flex-start; } }
-
-.light {
-  padding: 8rem 4rem; }
-  @media (min-width: 56.25em) {
-    .light {
-      padding: 8rem 10rem; } }
 
 .assurance {
   padding-left: 3rem;

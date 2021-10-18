@@ -14,10 +14,6 @@ body{
      font-family: 'Montserrat', sans-serif;
 }
 
-h1,h2,h3{
-     font-family: 'Noto Sans Display', sans-serif;
-}
-
 section{
      padding-top: 12rem !important;
      padding-bottom: 12rem !important;
@@ -25,4 +21,9 @@ section{
 
 .dark{
      background-color: #F4F4F4;
+}
+
+p{
+     line-height: 2.8rem;
+     font-family: 'Montserrat', sans-serif;
 }
