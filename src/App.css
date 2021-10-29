@@ -371,7 +371,7 @@ p {
     .navbar img {
       height: 5rem;
       width: auto;
-      justify-self: start; } }
+      justify-self: flex-start; } }
 
 .navbar ul {
   list-style: none;
@@ -419,7 +419,7 @@ p {
     display: flex;
     flex-direction: column;
     position: fixed;
-    justify-content: start;
+    justify-content: flex-start;
     top: 55px;
     background-color: #fff;
     width: 100%;

@@ -1,8 +1,8 @@
 import React from 'react'
-import {
+/* import {
      BrowserRouter as Router,
      Link
-   } from "react-router-dom";
+   } from "react-router-dom"; */
 
 function ProjectBox({projects}) {
      
