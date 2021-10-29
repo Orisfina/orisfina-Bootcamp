@@ -303,6 +303,18 @@ p {
       grid-template-columns: repeat(2, 1fr);
       column-gap: 9rem; } }
 
+.grid1-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 4rem; }
+  @media (min-width: 56.25em) {
+    .grid1-2 {
+      grid-template-columns: 1fr 3fr;
+      column-gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      text-align: left; } }
+
 .grid3 {
   display: grid;
   grid-template-columns: 1fr;
@@ -449,3 +461,14 @@ p {
     .assurance__box--heading {
       padding-bottom: 2rem;
       padding-top: 1rem; }
+
+.best {
+  width: 90vw;
+  height: auto; }
+  @media (min-width: 75em) {
+    .best {
+      width: 40vw; } }
+
+.inline {
+  width: 10vh;
+  height: auto; }

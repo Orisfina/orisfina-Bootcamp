@@ -31,3 +31,17 @@
           }
      }
  }
+
+ .best{
+      width: 90vw;
+      height: auto;
+
+      @include respond(desktop){
+          width: 40vw;
+     }
+ }
+
+ .inline{
+      width: 10vh;
+      height: auto;
+ }

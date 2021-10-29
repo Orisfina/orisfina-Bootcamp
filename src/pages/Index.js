@@ -2,34 +2,17 @@ import React from 'react'
 import NavBar from '../components/NavBar'
 import ProjectBox from '../components/ProjectBox';
 import DoYouKnow from '../images/youtube_img-small.png'
-import ProjectImg1 from '../images/project_parallex-small.png'
-import ProjectImg2 from '../images/project_myTunes.png'
-import ProjectImg3 from '../images/project_acme.png'
 import SlideShow from '../components/SlideShow';
 import Button from '../components/Button';
 import Footer from '../components/Footer';
-import * as Unicons from "@iconscout/react-unicons-thinline";
+import best from '../images/orisfina-bootcamp-best-in -Edo-state.svg'
+import knowledge from '../images/knowledge.svg'
+import roadmap from '../images/roadmap.svg'
+import jobReady from '../images/job-ready.svg'
+import projects from '../projects'
 
 function Index() {
-     const projectDesc = [
-          {
-               ProjectImg1: {ProjectImg1},
-               projectDesc1: 'A SIMPLE WEBSITE DEMONSTRATING THE POWER OF BACKGROUND ATTACHMENT PROPERTY- BEGINNER LEVEL',
-               projectLink1: '/project1'
-          },
-          {
-               ProjectImg2: {ProjectImg2},
-               projectDesc2: 'A SIMPLE WEBSITE DEMONSTRATING THE POWER OF BACKGROUND ATTACHMENT PROPERTY- BEGINNER LEVEL',
-               projectLink2: '/project2'
-          },
-          {
-               ProjectImg3: {ProjectImg3},
-               projectDesc3: 'A SIMPLE WEBSITE DEMONSTRATING THE POWER OF BACKGROUND ATTACHMENT PROPERTY- BEGINNER LEVEL',
-               projectLink3: '/project3'
-          }
-     ]
-
-
+   
      return (
           <>
           <div className="header">
@@ -40,14 +23,16 @@ function Index() {
 
            {/* What we about Section */}
            <section className="light container ">
-                <h2 className='primary-header  primary__text t-center  uppercase pb-m'>
+                <h2 className='primary-header  primary__text t-center  uppercase pb-l'>
                 Join one of the best coding bootcamps
                 </h2>
-                <p className='t-center'>
+               <div className='grid1-2'>
+                    <img src={best} className='best' alt="join one of the best coding bootcamp in Auchi"/>
+                <p className='t-left'>
                     Orisfina Bootcamp is one of the fastest growing bootcamp in Auchi, Edo State Nigeria which provides you with all the mentorship from our Tutors that will take you from a complete begineer to an Advanced level. 
                     Since Orisfina Bootcamp started in 2019, we've consistently been regarded as one of the best coding bootcamps in Edo State by students and employers. Our Syllabus are structured to help your learning path easy as possible.
                 </p>
-               
+              </div> 
            </section>
 
           {/* Why Orisfina Bootcamp */}
@@ -56,7 +41,7 @@ function Index() {
                 <div className="grid3">
                     
                     <div className="text-section">
-                         <Unicons.UitStar size="40" color="#0905C3" />
+                         <img src={knowledge} className='inline' alt='acquire web design knowledge at orisfina bootcamp'/>
                         <h3 className="tertiary-header">
                         Get in-depth knowledge.</h3> 
                          <p className=''>
@@ -66,17 +51,18 @@ function Index() {
                     </div>
 
                     <div className="text-section">
-                    <Unicons.UitStar size="40" color="#A8001E" />
-                        <h3 className="tertiary-header">
+                    <img src={roadmap} className='inline' alt='acquire web design knowledge at orisfina bootcamp'/>
+                         <h3 className="tertiary-header">
                               Get a helpful roadmap.
                         </h3> 
                          <p className=''>
-                               Like a career advisor, we guide you through each step. You’ll learn the right thing at the right time, all in one place.
+                               Like a career advisor, we guide you through each step. You’ll learn the right thing at the right time.
+                               {/*  all in one place. */}
                          </p>
                     </div>
 
                     <div className="text-section">
-                         <Unicons.UitStar size="40" color="#DC9714" />
+                          <img src={jobReady} className='inline' alt='acquire web design knowledge at orisfina bootcamp and start wining jobs'/>     
                         <h3 className="tertiary-header">
                               Get job ready.
                         </h3> 
@@ -88,6 +74,19 @@ function Index() {
                </div> 
           </section>
 
+           {/* What you will be Building Section */}
+           <section className="light container">
+           <h2 className='primary__text t-center pb-l uppercase'>What you will be building</h2>
+           <ProjectBox project={projects} />
+               {/* <div className="grid3 a-i-center">
+                    <ProjectBox projectLink1={projectDesc[0].projectLink1} projectDesc1={projectDesc[0].projectDesc1} projectImg={projectDesc[0].ProjectImg1.ProjectImg1} />
+
+                    <ProjectBox projectLink1={projectDesc[1].projectLink2} projectDesc2={projectDesc[1].projectDesc2} projectImg={projectDesc[1].ProjectImg2.ProjectImg2} />
+
+                    <ProjectBox projectLink1={projectDesc[2].projectLink3} projectDesc1={projectDesc[2].projectDesc3} projectImg={projectDesc[2].ProjectImg3.ProjectImg3} />
+               </div> */}
+           </section>
+
 
           {/* Courses Offered*/}
            <section className="light container t-center ">
@@ -95,7 +94,7 @@ function Index() {
                 <p className='tertiary-header t-center pb-l pt-s'>Don't just watch, choose a skill for yourself</p>
                 <div className="grid3">
                     <div className="text-section">
-                    <i class="pb-s fas fa-laptop-code fa-2x icon-color"></i>
+                    <i className="pb-s fas fa-laptop-code fa-2x icon-color"></i>
                         <h3 className="tertiary-header">
                         Frontend Development </h3> 
                              <p className='t-justify'>
@@ -110,24 +109,24 @@ function Index() {
                                    This includes design/layout, content, 
                                    buttons, images, navigation, and 
                                    internal links. */}
-                                   You will learn the fundamentals of structuring a webpage layout using HTML5 and CSS3 so that you can create responsive and beautiful websites from scratch. This course will also teach you everything you need to know about Javascript and take you from Zero to Hero.
+                                   You will learn the fundamentals of structuring a webpage layout using HTML5 and CSS3 so that you can create responsive and beautiful websites from scratch. 
                              </p>
                              <Button cName='btn btn__red flex mt-s' text='Read More' />
                     </div>
 
                     <div className="text-section">
-                    <i class="pb-s fas fa-layer-group fa-2x icon-color"></i>
+                    <i className="pb-s fas fa-layer-group fa-2x icon-color"></i>
                         <h3 className="tertiary-header">
                               Graphic Design
                          </h3> 
                              <p className='t-justify'>
-                                   Master the fundamental skills needed to design visually appealing designs. In this course, you will be expose to Hands-on projects that will improve your portfolio and increase your chances of landing jobs offers after training. 
+                                   Master the fundamental skills needed to design visually appealing designs. In this course, you will be expose to Hands-on projects that will improve your portfolio.
                              </p>
-                             <Button cName='btn btn__red flex mt-m' text='Read More' />
+                             <Button cName='btn btn__red flex mt-s' text='Read More' />
                     </div>
                               
                     <div className="text-section">
-                    <i class="pb-s fas fa-search-dollar fa-2x  icon-color"></i>
+                    <i className="pb-s fas fa-search-dollar fa-2x  icon-color"></i>
                         <h3 className="tertiary-header">
                               Backend Development
                          </h3> 
@@ -136,25 +135,23 @@ function Index() {
                               builds and maintains the technology 
                               needed to power the components which
                               enable the user-facing side of the 
-                              website to exist. Their back end code
-                              adds utility to everything the front-end
-                              developer creates..
+                              website to exist. 
                          </p>
                          <Button cName='btn btn__red flex mt-s' text='Read More' />
                     </div>
 
                     <div className="text-section">
-                    <i class="pb-s fas fa-search-dollar fa-2x  icon-color"></i>
+                    <i className="pb-s fas fa-search-dollar fa-2x  icon-color"></i>
                         <h3 className="tertiary-header">
                               SEO / Digital Marketing
                          </h3> 
                          <p className='t-justify'>
-                             Learn the basis of Search Engine optimization (SEO) and increase organic traffic of your site / blog. Offer your skills to potential client while you make money. The course is opened to everyone regardless of your current knownledge about search engines
+                             Learn the basis of Search Engine optimization (SEO) and increase organic traffic of your site / blog. Offer your skills to potential client while you make money. The course is opened to everyone.
                          </p>
                          <Button cName='btn btn__red flex mt-s' text='Read More' />
                     </div>
                      <div className="text-section">
-                    <i class="pb-s fas fa-desktop fa-2x  icon-color" aria-hidden="true"></i>
+                    <i className="pb-s fas fa-desktop fa-2x  icon-color" aria-hidden="true"></i>
                         <h3 className="tertiary-header">
                               UI/UX Designer
                          </h3> 
@@ -168,7 +165,7 @@ function Index() {
                     </div> 
 
                     <div className="text-section">
-                    <i class=" pb-s fas fa-file-word fa-2x  icon-color" aria-hidden="true"></i>
+                    <i className=" pb-s fas fa-file-word fa-2x  icon-color" aria-hidden="true"></i>
                         <h3 className="tertiary-header">
                               Application Packages
                          </h3> 
@@ -181,41 +178,41 @@ function Index() {
                </div> 
           </section>
 
-          <section class=" container assurance dark t-center">
-			<div class="assurance__heading">
-				<h2 class="primary-header  primary__text t-center  uppercase">Still not sure? </h2>
-				<p class="tertiary-header t-center pb-l pt-s">See what we've put in place for you</p>
+          <section className=" container assurance dark t-center">
+			<div className="assurance__heading">
+				<h2 className="primary-header  primary__text t-center  uppercase">Still not sure? </h2>
+				<p className="tertiary-header t-center pb-l pt-s">See what we've put in place for you</p>
 			</div>
                <div className='grid2'>
-			<div class="assurance__box">
-				<div class="assurance__box--icon t-center p-t-large">
+			<div className="assurance__box">
+				<div className="assurance__box--icon t-center p-t-large">
 			
-				<i class="fas fa-handshake fa-3x t-center icon-color flex pb-s perfect-center"></i>
-				<h3 class="assurance__box--heading t-center p-t-small">Money Back Guarrante</h3>
-				<p class="t-center">Are you still doubting if acquiring that skill is the right path for you? Are you scared of loosing your hard earn money?
+				<i className="fas fa-handshake fa-3x t-center icon-color flex pb-s perfect-center"></i>
+				<h3 className="assurance__box--heading t-center p-t-small">Money Back Guarrante</h3>
+				<p className="t-center">Are you still doubting if acquiring that skill is the right path for you? Are you scared of loosing your hard earn money?
 				We've got you covered here at Orisfina bootcamp. We offer our <strong>Students Money back Guarrantee Packages</strong></p>
-				<p class="t-center ">Note: <strong>T &amp; C applies</strong></p>
+				<p className="t-center ">Note: <strong>T &amp; C applies</strong></p>
 				</div>
 			</div>
                
-			<div class="assurance__box">
-				<div class="assurance__box--icon t-center p-t-large"></div>
-				<i class="fas fa-money-check fa-3x t-center icon-color flex pb-s perfect-center"></i>
-				<h3 class="t-center p-t-s">Installmental Payment</h3>
-				<p class="t-center pt-s">
+			<div className="assurance__box">
+				<div className="assurance__box--icon t-center p-t-large"></div>
+				<i className="fas fa-money-check fa-3x t-center icon-color flex pb-s perfect-center"></i>
+				<h3 className="t-center p-t-s">Installmental Payment</h3>
+				<p className="t-center pt-s">
 					Are you going through some financial chanlleges but still wants to acquire that skills? Here at Orisfina, We've tailored our training to suit everyone regardless of your financial level. 
 				</p>
-				<p class="t-center">You can pay your fees Installmentally</p>
-				<p class="t-center">Note: <strong>T &amp; C applies</strong></p>
+				<p className="t-center">You can pay your fees Installmentally</p>
+				<p className="t-center">Note: <strong>T &amp; C applies</strong></p>
 			</div>
                </div>
 		</section>
 
-          <section class=" container light">
-			<h2 class="primary__text t-center pt-m pb-s">
+          <section className=" container light">
+			<h2 className="primary__text t-center pt-m pb-s">
                     Wait no further
                </h2>
-			<p class="text-para t-center pb-m">
+			<p className="text-para t-center pb-m">
                     Wait no further. Take a step now and join hundreds of others worldwide in any our courses. Our programme are suited for you (Week days or Weekends
                </p>
 			<Button text='Enjoy 20% discount Now!' cName='btn btn__primary' />
@@ -264,17 +261,7 @@ function Index() {
                </div>
            </section>
 
-           {/* What you will be Building Section */}
-           <section className="light container dark">
-           <h2 className='primary__text t-center pb-l'>What you will be building</h2>
-               <div className="grid3 a-i-center">
-                    <ProjectBox projectLink1={projectDesc[0].projectLink1} projectDesc1={projectDesc[0].projectDesc1} projectImg={projectDesc[0].ProjectImg1.ProjectImg1} />
-
-                    <ProjectBox projectLink1={projectDesc[1].projectLink2} projectDesc2={projectDesc[1].projectDesc2} projectImg={projectDesc[1].ProjectImg2.ProjectImg2} />
-
-                    <ProjectBox projectLink1={projectDesc[2].projectLink3} projectDesc1={projectDesc[2].projectDesc3} projectImg={projectDesc[2].ProjectImg3.ProjectImg3} />
-               </div>
-           </section>
+          
 
            <Footer />
            </>
