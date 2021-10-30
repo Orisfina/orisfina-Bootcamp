@@ -10,11 +10,8 @@
 
 function App() {
    return (
+    <>
     <Router>
-      <>
-        <Home /> 
-      </>
-
       <Switch>
           <Route path="/about">
             <About />
@@ -33,6 +30,7 @@ function App() {
           </Route>
         </Switch>
     </Router>
+    </>
    );
  }
 
