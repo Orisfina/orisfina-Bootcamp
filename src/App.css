@@ -471,4 +471,10 @@ p {
 
 .inline {
   width: 10vh;
-  height: auto; }
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (min-width: 56.25em) {
+    .inline {
+      display: inline; } }

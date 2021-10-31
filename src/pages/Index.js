@@ -80,9 +80,7 @@ function Index() {
            <ProjectBox project={projects} />
                {/* <div className="grid3 a-i-center">
                     <ProjectBox projectLink1={projectDesc[0].projectLink1} projectDesc1={projectDesc[0].projectDesc1} projectImg={projectDesc[0].ProjectImg1.ProjectImg1} />
-
                     <ProjectBox projectLink1={projectDesc[1].projectLink2} projectDesc2={projectDesc[1].projectDesc2} projectImg={projectDesc[1].ProjectImg2.ProjectImg2} />
-
                     <ProjectBox projectLink1={projectDesc[2].projectLink3} projectDesc1={projectDesc[2].projectDesc3} projectImg={projectDesc[2].ProjectImg3.ProjectImg3} />
                </div> */}
            </section>
@@ -269,4 +267,3 @@ function Index() {
 }
 
 export default Index
-

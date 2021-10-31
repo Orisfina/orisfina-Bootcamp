@@ -1,10 +1,13 @@
 import React from 'react'
+import NavBar from '../components/NavBar'
 
 function Register() {
      return (
-          <div>
-               Registration
-          </div>
+          <>
+               <NavBar />
+               Registration page
+             
+          </>
      )
 }
 

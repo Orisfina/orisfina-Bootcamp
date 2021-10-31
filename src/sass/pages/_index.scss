@@ -44,4 +44,13 @@
  .inline{
       width: 10vh;
       height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+
+      @include respond(tab-land){
+          display: inline; 
+      }
+      
+      
  }

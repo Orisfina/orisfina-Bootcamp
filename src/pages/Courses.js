@@ -1,10 +1,12 @@
 import React from 'react'
+import NavBar from '../components/NavBar'
 
 function Courses() {
      return (
-          <div>
+          <>
+               <NavBar />
                Our Courses
-          </div>
+          </>
      )
 }
 
