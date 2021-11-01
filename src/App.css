@@ -24,31 +24,34 @@ section {
   padding-bottom: 12rem !important; }
 
 .dark {
-  background-color: #F4F4F4; }
+  background-color: #fafafa; }
 
 p {
   line-height: 2.8rem;
   font-family: 'Montserrat', sans-serif; }
 
-.primary__header {
+.primary-header {
   font-size: 4rem;
   line-height: 1.2;
   color: #FEE300;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Lato', 'Open Sans', sans-serif; }
   @media (min-width: 75em) {
-    .primary__header {
-      font-size: 5rem;
+    .primary-header {
+      font-size: 4rem;
+      font-weight: 800;
       line-height: 1.2; } }
+
+h2 span {
+  color: #0087cb; }
 
 .primary__text {
   font-size: 2.5rem;
   line-height: 1.2;
   color: #001213;
-  font-family: 'Raleway', sans-serif;
   font-weight: 800; }
   @media (min-width: 75em) {
     .primary__text {
-      font-size: 3rem;
+      font-size: 3.6rem;
       line-height: 1.2; } }
 
 .tertiary-header {
@@ -191,11 +194,22 @@ p {
   transform: translateY(-8px) rotate(-45deg); }
 
 .btn {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   text-decoration: none;
   outline: none;
   border: none;
   padding: 1.25rem 3.5rem; }
+  .btn__link {
+    display: inline-block;
+    padding: .7rem 1.5rem;
+    margin-top: 2rem;
+    text-decoration: none; }
+    .btn__link__red {
+      background-color: #0087cb;
+      color: #EEF7F8;
+      transition: 1s all; }
+      .btn__link__red:hover {
+        background-color: #123277; }
   .btn__red {
     background-color: #FF4040;
     color: #EEF7F8; }
@@ -256,10 +270,14 @@ p {
       .slideshow__bar {
         margin-top: 0; } }
 
-.projectBox__desc {
+.project-box__img {
+  border-radius: 5%;
+  object-fit: fill; }
+
+.project-box__desc {
   font-size: 1.2rem; }
   @media (min-width: 56.25em) {
-    .projectBox__desc {
+    .project-box__desc {
       font-size: 1.6rem; } }
 
 .footer {
@@ -273,7 +291,7 @@ p {
 .subFooter {
   background-color: #19202A;
   color: #EEF7F8;
-  padding: 6rem 6rem !important;
+  padding: 6rem 3rem !important;
   justify-content: center;
   justify-items: center;
   justify-self: center;
@@ -312,7 +330,6 @@ p {
       grid-template-columns: 1fr 3fr;
       column-gap: 2rem;
       justify-content: center;
-      align-items: center;
       text-align: left; } }
 
 .grid3 {
@@ -440,6 +457,10 @@ p {
     cursor: pointer; }
   .mobile-nav {
     transform: translate(0%) !important; } }
+
+.link__btn {
+  background-color: red;
+  text-decoration: none; }
 
 .fas {
   display: flex;

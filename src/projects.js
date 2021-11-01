@@ -5,13 +5,13 @@ import ProjectImg3 from './images/project_acme.png'
 const projects = [
     {
          id:1,
-         ProjectImg: {ProjectImg1},
+         projectImg: {ProjectImg1},
          projectDesc: 'A SIMPLE WEBSITE DEMONSTRATING THE POWER OF BACKGROUND ATTACHMENT PROPERTY- BEGINNER LEVEL',
          projectLink: '/project1'
     },
     {
          id:2,
-         ProjectImg: {ProjectImg2},
+         proectImg: {ProjectImg2},
          projectDesc: 'A SIMPLE WEBSITE DEMONSTRATING THE POWER OF BACKGROUND ATTACHMENT PROPERTY- BEGINNER LEVEL',
          projectLink: '/project2'
     },

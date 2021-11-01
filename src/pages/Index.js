@@ -5,7 +5,7 @@ import DoYouKnow from '../images/youtube_img-small.png'
 import SlideShow from '../components/SlideShow';
 import Button from '../components/Button';
 import Footer from '../components/Footer';
-import best from '../images/orisfina-bootcamp-best-in -Edo-state.svg'
+import best from '../images/slide-1.jpg'
 import knowledge from '../images/knowledge.svg'
 import roadmap from '../images/roadmap.svg'
 import jobReady from '../images/job-ready.svg'
@@ -23,8 +23,8 @@ function Index() {
 
            {/* What we about Section */}
            <section className="light container ">
-                <h2 className='primary-header  primary__text t-center  uppercase pb-l'>
-                Join one of the best coding bootcamps
+                <h2 className='primary-header  primary__text t-center pb-l'>
+                Join one of the <span> best coding</span> bootcamps
                 </h2>
                <div className='grid1-2'>
                     <img src={best} className='best' alt="join one of the best coding bootcamp in Auchi"/>
@@ -37,7 +37,7 @@ function Index() {
 
           {/* Why Orisfina Bootcamp */}
            <section className="dark container clip-bg">
-                <h2 className='primary-header  primary__text t-center  uppercase pb-l'>Why Orisfina Bootcamp</h2>
+                <h2 className='primary-header  primary__text t-center pb-l'>Why <span>Orisfina</span> Bootcamp</h2>
                 <div className="grid3">
                     
                     <div className="text-section">
@@ -76,18 +76,13 @@ function Index() {
 
            {/* What you will be Building Section */}
            <section className="light container">
-           <h2 className='primary__text t-center pb-l uppercase'>What you will be building</h2>
+           <h2 className='primary__text t-center pb-l uppercase'>What you will be <span> building</span></h2>
            <ProjectBox project={projects} />
-               {/* <div className="grid3 a-i-center">
-                    <ProjectBox projectLink1={projectDesc[0].projectLink1} projectDesc1={projectDesc[0].projectDesc1} projectImg={projectDesc[0].ProjectImg1.ProjectImg1} />
-                    <ProjectBox projectLink1={projectDesc[1].projectLink2} projectDesc2={projectDesc[1].projectDesc2} projectImg={projectDesc[1].ProjectImg2.ProjectImg2} />
-                    <ProjectBox projectLink1={projectDesc[2].projectLink3} projectDesc1={projectDesc[2].projectDesc3} projectImg={projectDesc[2].ProjectImg3.ProjectImg3} />
-               </div> */}
            </section>
 
 
           {/* Courses Offered*/}
-           <section className="light container t-center ">
+           <section className="light container t-center dark">
                 <h2 className='primary-header  primary__text t-center  uppercase' >Courses Offered</h2>
                 <p className='tertiary-header t-center pb-l pt-s'>Don't just watch, choose a skill for yourself</p>
                 <div className="grid3">
@@ -109,7 +104,7 @@ function Index() {
                                    internal links. */}
                                    You will learn the fundamentals of structuring a webpage layout using HTML5 and CSS3 so that you can create responsive and beautiful websites from scratch. 
                              </p>
-                             <Button cName='btn btn__red flex mt-s' text='Read More' />
+                             <Button cName='btn btn__link__red flex mt-s' text='Read More' />
                     </div>
 
                     <div className="text-section">
@@ -120,7 +115,7 @@ function Index() {
                              <p className='t-justify'>
                                    Master the fundamental skills needed to design visually appealing designs. In this course, you will be expose to Hands-on projects that will improve your portfolio.
                              </p>
-                             <Button cName='btn btn__red flex mt-s' text='Read More' />
+                             <Button cName='btn btn__link__red flex mt-s' text='Read More' />
                     </div>
                               
                     <div className="text-section">
@@ -135,7 +130,7 @@ function Index() {
                               enable the user-facing side of the 
                               website to exist. 
                          </p>
-                         <Button cName='btn btn__red flex mt-s' text='Read More' />
+                         <Button cName='btn btn__link__red flex mt-s' text='Read More' />
                     </div>
 
                     <div className="text-section">
@@ -146,7 +141,7 @@ function Index() {
                          <p className='t-justify'>
                              Learn the basis of Search Engine optimization (SEO) and increase organic traffic of your site / blog. Offer your skills to potential client while you make money. The course is opened to everyone.
                          </p>
-                         <Button cName='btn btn__red flex mt-s' text='Read More' />
+                         <Button cName='btn btn__link__red flex mt-s' text='Read More' />
                     </div>
                      <div className="text-section">
                     <i className="pb-s fas fa-desktop fa-2x  icon-color" aria-hidden="true"></i>
@@ -159,7 +154,7 @@ function Index() {
                               for our success and ensuring customer 
                               satisfaction and loyalty.
                          </p>
-                         <Button cName='btn btn__red flex mt-s' text='Read More' />
+                         <Button cName='btn btn__link__red flex mt-s' text='Read More' />
                     </div> 
 
                     <div className="text-section">
@@ -170,13 +165,13 @@ function Index() {
                          <p className='t-justify'>
                                    This course gives you all the training needed to increase your typing speed, create beautiful powerpoint slides and also perform calculations in Microsoft Excel. Our Syllabus is tailored to get you going irrespective of who you are.
                          </p>
-                         <Button cName='btn btn__red flex mt-s' text='Read More' />
+                         <Button cName='btn btn__link__red flex mt-s' text='Read More' />
                     </div>
                   
                </div> 
           </section>
 
-          <section className=" container assurance dark t-center">
+          <section className=" container assurance t-center">
 			<div className="assurance__heading">
 				<h2 className="primary-header  primary__text t-center  uppercase">Still not sure? </h2>
 				<p className="tertiary-header t-center pb-l pt-s">See what we've put in place for you</p>
@@ -206,7 +201,7 @@ function Index() {
                </div>
 		</section>
 
-          <section className=" container light">
+          <section className=" container dark">
 			<h2 className="primary__text t-center pt-m pb-s">
                     Wait no further
                </h2>

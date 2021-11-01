@@ -1,7 +1,17 @@
-.projectBox__desc{
-    font-size: 1.2rem;
-    @include respond(tab-land){
-        font-size: 1.6rem;
-    }
+.project-box{
     
+    &__img{
+        border-radius: 5%;
+        object-fit: fill;
+    }
+
+    &__desc{
+        font-size: 1.2rem;
+        // padding: 1rem;
+        @include respond(tab-land){
+            font-size: 1.6rem;
+        }  
+    }
 }
+
+
