@@ -1,10 +1,29 @@
+.title{
+     font-size: 3.2rem;
+     line-height: 5rem;
+     color: $yellow;
+     font-family: 'Lato', 'Open Sans', sans-serif;
+
+     @include respond(phone-m){
+          font-size: 3.3rem;
+     }
+     @include respond(tab){
+          font-size: 5rem;
+          line-height: 7rem;
+     }
+     @include respond(desktop){
+          font-size:5rem;
+          font-weight: 800;
+          line-height: 1.2;
+     }   
+}
 
 .primary-header{
      font-size: 4rem;
      line-height: 1.2;
      color: $yellow;
      font-family: 'Lato', 'Open Sans', sans-serif;
-
+     text-transform: uppercase;
      @include respond(desktop){
           font-size:4rem;
           font-weight: 800;

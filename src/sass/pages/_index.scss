@@ -33,7 +33,7 @@
  }
 
  .best{
-      width: 90vw;
+      width: 85vw;
       height: auto;
 
       @include respond(desktop){
@@ -42,14 +42,15 @@
  }
 
  .inline{
-      width: 10vh;
+      width: 8vh;
       height: auto;
       display: block;
       margin-left: auto;
       margin-right: auto;
 
       @include respond(tab-land){
-          display: inline; 
+          display: inline;
+          width: 10vh; 
       }
       
       

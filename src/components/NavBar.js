@@ -3,6 +3,11 @@ import logo from '../images/logo-small.svg';
 import {NavLink} from "react-router-dom";
 
 function NavBar() {
+     /*  const [toggle, setToggle] = useState(false);
+     let toggleMenu = document.getElementById('mobile-menu');
+     toggleMenu.addEventListener('click', ()=>{
+        return   console.log(toggle);
+     }) */
      return (
  <div className="nav-wrapper">
   <nav className="navbar">

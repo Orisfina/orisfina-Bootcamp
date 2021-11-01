@@ -20,8 +20,18 @@ body {
   font-family: 'Montserrat', sans-serif; }
 
 section {
-  padding-top: 12rem !important;
-  padding-bottom: 12rem !important; }
+  padding-top: 10rem !important;
+  padding-bottom: 10rem !important; }
+  @media (min-width: 75em) {
+    section {
+      padding-top: 12rem !important;
+      padding-bottom: 12rem !important; } }
+
+.grid3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 4rem;
+  row-gap: 14rem; }
 
 .dark {
   background-color: #fafafa; }
@@ -30,11 +40,30 @@ p {
   line-height: 2.8rem;
   font-family: 'Montserrat', sans-serif; }
 
+.title {
+  font-size: 3.2rem;
+  line-height: 5rem;
+  color: #FEE300;
+  font-family: 'Lato', 'Open Sans', sans-serif; }
+  @media (min-width: 23.88em) {
+    .title {
+      font-size: 3.3rem; } }
+  @media (min-width: 37.5em) {
+    .title {
+      font-size: 5rem;
+      line-height: 7rem; } }
+  @media (min-width: 75em) {
+    .title {
+      font-size: 5rem;
+      font-weight: 800;
+      line-height: 1.2; } }
+
 .primary-header {
   font-size: 4rem;
   line-height: 1.2;
   color: #FEE300;
-  font-family: 'Lato', 'Open Sans', sans-serif; }
+  font-family: 'Lato', 'Open Sans', sans-serif;
+  text-transform: uppercase; }
   @media (min-width: 75em) {
     .primary-header {
       font-size: 4rem;
@@ -69,7 +98,7 @@ h2 span {
   padding: 0 3rem; }
   @media (min-width: 37.5em) {
     .container {
-      padding: 0 3.5rem; } }
+      padding: 0 5rem; } }
   @media (min-width: 56.25em) {
     .container {
       padding: 0 4rem; } }
@@ -81,7 +110,7 @@ h2 span {
   text-align: center; }
 
 .icon-color {
-  color: #0088cc; }
+  color: #000D0E; }
 
 .bc-primary-color {
   background-color: #0088cc;
@@ -150,10 +179,17 @@ h2 span {
 
 .clip-bg {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%); }
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  padding-bottom: 17rem !important; }
 
 .uppercase {
   text-transform: uppercase; }
+
+.t-center-mobile {
+  text-align: center; }
+  @media (min-width: 75em) {
+    .t-center-mobile {
+      text-align: left; } }
 
 /* KEYFRAME ANIMATIONS */
 @-webkit-keyframes gradbar {
@@ -273,9 +309,12 @@ h2 span {
 .project-box__img {
   border-radius: 5%;
   object-fit: fill; }
+  @media (min-width: 23.88em) {
+    .project-box__img {
+      width: 85vw; } }
 
 .project-box__desc {
-  font-size: 1.2rem; }
+  font-size: 1.5rem; }
   @media (min-width: 56.25em) {
     .project-box__desc {
       font-size: 1.6rem; } }
@@ -286,19 +325,29 @@ h2 span {
   padding: 2rem 3rem;
   color: #EEF7F8;
   text-decoration: none;
-  list-style: none; }
+  list-style: none;
+  font-size: 1.3rem; }
 
 .subFooter {
   background-color: #19202A;
   color: #EEF7F8;
-  padding: 6rem 3rem !important;
+  padding: 6rem 2rem !important;
   justify-content: center;
   justify-items: center;
   justify-self: center;
   align-items: center;
-  align-content: center; }
+  align-content: center;
+  font-size: 1.3rem; }
+  @media (min-width: 56.25em) {
+    .subFooter {
+      font-size: 1.6rem; } }
   .subFooter__heading {
-    padding-bottom: 2rem; }
+    padding-bottom: .7rem;
+    font-size: 1.3rem; }
+    @media (min-width: 56.25em) {
+      .subFooter__heading {
+        padding-bottom: 2rem;
+        font-size: 2rem; } }
   .subFooter__list {
     list-style-type: none; }
     .subFooter__list i {
@@ -335,12 +384,15 @@ h2 span {
 .grid3 {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 4rem; }
+  row-gap: 12rem; }
   @media (min-width: 56.25em) {
     .grid3 {
       grid-template-columns: repeat(3, 1fr);
       column-gap: 6rem;
       row-gap: 10rem; } }
+  @media (min-width: 75em) {
+    .grid3 {
+      row-gap: 4rem; } }
 
 /* BASIC SETUP */
 .page-wrapper {
@@ -484,18 +536,19 @@ h2 span {
       padding-top: 1rem; }
 
 .best {
-  width: 90vw;
+  width: 85vw;
   height: auto; }
   @media (min-width: 75em) {
     .best {
       width: 40vw; } }
 
 .inline {
-  width: 10vh;
+  width: 8vh;
   height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto; }
   @media (min-width: 56.25em) {
     .inline {
-      display: inline; } }
+      display: inline;
+      width: 10vh; } }

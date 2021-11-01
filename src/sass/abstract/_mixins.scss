@@ -15,7 +15,7 @@
      } //375px
 
      @if $breakpoint == phone-m {
-          @media (min-width:25.88em) {@content}
+          @media (min-width:23.88em) {@content}
      } // 414px
 
      @if $breakpoint == tab { 

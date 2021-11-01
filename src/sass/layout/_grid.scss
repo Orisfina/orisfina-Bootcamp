@@ -27,11 +27,14 @@
 .grid3{
      display: grid;
      grid-template-columns: 1fr;
-     row-gap: 4rem;
+     row-gap: 12rem;
 
      @include respond(tab-land){
           grid-template-columns: repeat(3, 1fr);
           column-gap: 6rem;
           row-gap: 10rem;
+     }
+     @include respond (desktop){
+          row-gap: 4rem;
      }
 }

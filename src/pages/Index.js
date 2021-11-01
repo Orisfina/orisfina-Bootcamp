@@ -44,7 +44,7 @@ function Index() {
                          <img src={knowledge} className='inline' alt='acquire web design knowledge at orisfina bootcamp'/>
                         <h3 className="tertiary-header">
                         Get in-depth knowledge.</h3> 
-                         <p className=''>
+                         <p className='t-center-mobile'>
                                Learning to code means more than just memorizing syntax. Instead, we help you think like a real programmer.
                          </p>
                         
@@ -55,7 +55,7 @@ function Index() {
                          <h3 className="tertiary-header">
                               Get a helpful roadmap.
                         </h3> 
-                         <p className=''>
+                         <p className='t-center-mobile'>
                                Like a career advisor, we guide you through each step. You’ll learn the right thing at the right time.
                                {/*  all in one place. */}
                          </p>
@@ -66,7 +66,7 @@ function Index() {
                         <h3 className="tertiary-header">
                               Get job ready.
                         </h3> 
-                         <p className=''>
+                         <p className='t-center-mobile'>
                               Gain practical experience as you go by creating portfolio-worthy projects that will help you land your next job.
                          </p>
                     </div>
@@ -87,7 +87,7 @@ function Index() {
                 <p className='tertiary-header t-center pb-l pt-s'>Don't just watch, choose a skill for yourself</p>
                 <div className="grid3">
                     <div className="text-section">
-                    <i className="pb-s fas fa-laptop-code fa-2x icon-color"></i>
+                    <i className="pb-s fas fa-laptop-code fa-3x icon-color"></i>
                         <h3 className="tertiary-header">
                         Frontend Development </h3> 
                              <p className='t-justify'>
@@ -108,7 +108,7 @@ function Index() {
                     </div>
 
                     <div className="text-section">
-                    <i className="pb-s fas fa-layer-group fa-2x icon-color"></i>
+                    <i className="pb-s fas fa-layer-group fa-3x icon-color"></i>
                         <h3 className="tertiary-header">
                               Graphic Design
                          </h3> 
@@ -119,7 +119,7 @@ function Index() {
                     </div>
                               
                     <div className="text-section">
-                    <i className="pb-s fas fa-search-dollar fa-2x  icon-color"></i>
+                    <i className="pb-s fas fa-search-dollar fa-3x  icon-color"></i>
                         <h3 className="tertiary-header">
                               Backend Development
                          </h3> 
@@ -134,7 +134,7 @@ function Index() {
                     </div>
 
                     <div className="text-section">
-                    <i className="pb-s fas fa-search-dollar fa-2x  icon-color"></i>
+                    <i className="pb-s fas fa-search-dollar fa-3x  icon-color"></i>
                         <h3 className="tertiary-header">
                               SEO / Digital Marketing
                          </h3> 
@@ -144,7 +144,7 @@ function Index() {
                          <Button cName='btn btn__link__red flex mt-s' text='Read More' />
                     </div>
                      <div className="text-section">
-                    <i className="pb-s fas fa-desktop fa-2x  icon-color" aria-hidden="true"></i>
+                    <i className="pb-s fas fa-desktop fa-3x  icon-color" aria-hidden="true"></i>
                         <h3 className="tertiary-header">
                               UI/UX Designer
                          </h3> 
@@ -158,7 +158,7 @@ function Index() {
                     </div> 
 
                     <div className="text-section">
-                    <i className=" pb-s fas fa-file-word fa-2x  icon-color" aria-hidden="true"></i>
+                    <i className=" pb-s fas fa-file-word fa-3x  icon-color" aria-hidden="true"></i>
                         <h3 className="tertiary-header">
                               Application Packages
                          </h3> 

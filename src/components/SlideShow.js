@@ -12,7 +12,7 @@ function SlideShow() {
      return (
           <section className='slideshow-main container flex a-i-center'>
                <div className="slideshow__textBox">
-                     <h2 className="primary__header white pb-s">
+                     <h2 className="title white pb-s">
                          Get Equipped with the <br />Latest I.T Skill
                      </h2>
                      <h1 className="slideshow__desc pb-m white">
