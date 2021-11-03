@@ -19,7 +19,7 @@ function SlideShow() {
                           Get all the training needed to become a Web Developer,  <br /> UI/UX Designer or Graphic Designer from Scratch. <span className="break"> <br />We've got all it takes!</span> 
                      </h1> 
 
-                   <Button cName='btn btn__yellow' text='Learn Free' />
+                   <Button cName='btn btn__yellow' text='Apply Now' />
                 </div> 
 
                { /*

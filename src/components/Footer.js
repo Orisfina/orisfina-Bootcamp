@@ -5,7 +5,7 @@ function Footer() {
     return (
 		<div>
         <section className="subFooter container">
-			<div className="grid3 a-i-center">
+			<div className="grid3 grid3-footer">
 				<div className="followUs">
 					<h3 className="subFooter__heading p-b-small uppercase">Follow Us</h3>
 					<ul>

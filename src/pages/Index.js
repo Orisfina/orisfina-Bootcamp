@@ -90,7 +90,7 @@ function Index() {
           {/* Courses Offered*/}
            <section className="container bc-primary-color">
                 <h2 className='primary-header  primary__text t-center  uppercase white' >Courses Offered</h2>
-                <p className='tertiary-header t-center pb-l pt-s'>Don't just watch, choose a skill for yourself</p>
+                <p className='tertiary-header t-center pb-l pt-s white'>Don't just watch, choose a skill for yourself</p>
                 <div className="grid3">
                     <div className="text-section text-section__courses">
                     <i className="pb-s fas fa-laptop-code fa-3x icon-color"></i>
@@ -179,7 +179,7 @@ function Index() {
           {/* Section Do you know */}
           <section className="light container clip-bg">
                <div className='grid21'>
-                     <div className="text-section">
+                     <div className="text-section a-item">
                          <h2 className="rimary-header  primary__text pb-l">
                               Do you know you can become a Web Developer in<span className='primary-color'> 12 Weeks?</span>
                          </h2> 
@@ -192,6 +192,7 @@ function Index() {
                               a career in web development. This is the reason why our Syllabus are tailored 
                               to helping you become one in just 12 Weeks
                          </p> 
+                         <Button cName='btn btn__link__red flex mt-s' text='Start Free Trial' />
                      </div>
                      <div>
                           <img src={DoYouKnow} alt='Becoming a web developer has never been so easy in the past like this. Get all you need to know at Orisfina bootcamp and become a web developer easily' className='doKnowImg '/>
@@ -215,7 +216,7 @@ function Index() {
           {/* BLog */}
           <section className='container blog'>
           <h2 className="primary-header t-center primary__text pb-l"> Recent Blog Post</h2> 
-          <div className='grid3'>
+          <div className='grid3 blog__grid3'>
                <div className='blog'>
                     <img className='blog__img' src={blogImg} alt='how to start freelancing' />
                     <h3 className='blog__title'>

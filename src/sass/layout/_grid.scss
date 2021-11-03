@@ -41,6 +41,10 @@
      grid-template-columns: 1fr;
      row-gap: 2rem;
 
+    &.blog__grid3{
+          display: grid;
+          row-gap: 8rem!important;
+     }
      @include respond(tab-land){
           grid-template-columns: repeat(3, 1fr);
           column-gap: 6rem;
@@ -50,3 +54,9 @@
           row-gap: 4rem;
      }
 }
+
+
+
+.grid3-footer {
+     row-gap: 2rem!important;
+    }

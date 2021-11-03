@@ -216,6 +216,9 @@ h2 span {
   padding: 5rem 4rem;
   margin-bottom: 4rem; }
 
+.a-item {
+  align-items: start !important; }
+
 /* KEYFRAME ANIMATIONS */
 @-webkit-keyframes gradbar {
   0% {
@@ -748,7 +751,7 @@ h2 span {
     @media (min-width: 56.25em) {
       .subFooter__heading {
         padding-bottom: 2rem;
-        font-size: 2rem; } }
+        font-size: 1.6rem; } }
   .subFooter__list {
     list-style-type: none; }
     .subFooter__list i {
@@ -797,6 +800,9 @@ h2 span {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 2rem; }
+  .grid3.blog__grid3 {
+    display: grid;
+    row-gap: 8rem !important; }
   @media (min-width: 56.25em) {
     .grid3 {
       grid-template-columns: repeat(3, 1fr);
@@ -805,6 +811,9 @@ h2 span {
   @media (min-width: 75em) {
     .grid3 {
       row-gap: 4rem; } }
+
+.grid3-footer {
+  row-gap: 2rem !important; }
 
 /* BASIC SETUP */
 .page-wrapper {
@@ -816,7 +825,7 @@ h2 span {
   position: -webkit-sticky;
   /* Safari */
   position: sticky;
-  top: 0;
+  top: -2px;
   background-color: #fff; }
 
 .grad-bar {
@@ -865,7 +874,8 @@ h2 span {
   font-size: 1.5rem;
   font-weight: 800;
   text-decoration: none;
-  transition: color 0.3s ease-out; }
+  transition: color 0.3s ease-out;
+  padding: 1rem 0; }
 
 .nav-item:hover {
   color: #0085c8;
@@ -901,13 +911,17 @@ h2 span {
     flex-direction: column;
     position: fixed;
     justify-content: flex-start;
-    top: 55px;
+    top: 4.8rem;
     background-color: #fff;
-    width: 100%;
-    height: 42vh;
+    width: 70%;
+    height: 84vh;
     transform: translate(-101%);
     text-align: center;
-    overflow: hidden; }
+    overflow: hidden;
+    left: 0;
+    padding: 5rem 0; }
+    .navbar ul .active-navbar {
+      padding: 5rem 0; }
   .navbar li {
     padding: 15px; }
   .navbar li:first-child {
@@ -926,6 +940,16 @@ h2 span {
   background-color: red;
   text-decoration: none; }
 
+@media (max-width: 760px) {
+  .active-navbar {
+    left: 26rem !important;
+    padding: 5rem 0;
+    transition: all 2s; } }
+
+/* 
+   nav no-search active-navbar .navbar ul{
+
+   */
 .fas {
   display: flex;
   justify-content: center; }
@@ -967,13 +991,16 @@ h2 span {
 
 .text-section {
   background: #fff;
-  padding: 4rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  @media (min-width: 75em) {
+    .text-section {
+      padding: 4rem 2rem; } }
   .text-section__courses {
-    border-radius: 2rem; }
+    border-radius: 2rem;
+    height: 27rem; }
     .text-section__courses:hover {
       background-color: #FEE300;
       color: #EEF7F8;
@@ -1033,3 +1060,6 @@ h2 span {
 .text {
   position: relative;
   z-index: 100; }
+
+.grid3.a-i-center {
+  row-gap: 8rem !important; }

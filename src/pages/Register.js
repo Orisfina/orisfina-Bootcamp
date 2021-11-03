@@ -6,7 +6,11 @@ function Register() {
      return (
           <>
                <NavBar />
-               
+               <section className='container'>
+                    <h2 className='primary-header'>
+                         Registration Form
+                    </h2>
+               </section>
 
                <Footer />
              
