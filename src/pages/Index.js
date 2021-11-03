@@ -12,6 +12,7 @@ import jobReady from '../images/job-ready.svg'
 import projects from '../projects'
 import Testimonial from '../components/Testimonial';
 import { Link } from 'react-router-dom';
+import blogImg from '../images/portfolio-website-tips-freelance-developer.jpg'
 
 function Index() {
    
@@ -89,7 +90,7 @@ function Index() {
           {/* Courses Offered*/}
            <section className="container bc-primary-color">
                 <h2 className='primary-header  primary__text t-center  uppercase white' >Courses Offered</h2>
-                <p className='tertiary-header t-center pb-l pt-s white'>Don't just watch, choose a skill for yourself</p>
+                <p className='tertiary-header t-center pb-l pt-s'>Don't just watch, choose a skill for yourself</p>
                 <div className="grid3">
                     <div className="text-section text-section__courses">
                     <i className="pb-s fas fa-laptop-code fa-3x icon-color"></i>
@@ -193,7 +194,7 @@ function Index() {
                          </p> 
                      </div>
                      <div>
-                          <img src={DoYouKnow} alt='Becoming a web developer has never been so easy in the past like this. Get all you need to know at Orisfina bootcamp and become a web developer easily' className='doKnowImg'/>
+                          <img src={DoYouKnow} alt='Becoming a web developer has never been so easy in the past like this. Get all you need to know at Orisfina bootcamp and become a web developer easily' className='doKnowImg '/>
                     </div>
                </div>
            </section>
@@ -210,25 +211,44 @@ function Index() {
                </div>
                <div className='bg-overlay'></div>
           </section>
-          {/* Have a Question? */}
-          <section className="bc-primary-color container clip-bg">
-                <h2 className='primary__text t-center pb-s white'>
-                     Have questions? Join our community
-                </h2> 
-               <div className="text-section pr-l-6 font2rem">
-                    <p className='t-center'>
-                         The Orisfina community is a great place to ask questions.
-                    </p>
-                    <p className='t-center'>
-                         It is filled with current students, alumni, mentors, instructors, and staff.
-                    </p>
-               </div>
-               <div className='flex perfect-center mt-m'>
-                    <Button cName='btn btn__secondary bold' text='Join our Community' />
-               </div>
-               
-          </section>
           
+          {/* BLog */}
+          <section className='container blog'>
+          <h2 className="primary-header t-center primary__text pb-l"> Recent Blog Post</h2> 
+          <div className='grid3'>
+               <div className='blog'>
+                    <img className='blog__img' src={blogImg} alt='how to start freelancing' />
+                    <h3 className='blog__title'>
+                    Portfolio Website Tips for Freelance Developers
+                    </h3>
+                    <p className='blog__intro pb-s'>
+                    How to build a winning Portfolio Website as a Freelance Developer. All you need to know.
+                    </p>
+                    <Link to='/register' className='btn btn__link__red'>Read Article</Link>
+               </div>
+               <div className='blog'>
+                    <img className='blog__img' src={blogImg} alt='how to start freelancing' />
+                    <h3 className='blog__title'>
+                         How to Start a Freelance 
+                         Web Design Business
+                    </h3>
+                    <p className='blog__intro pb-s'>
+                    Here's how to start a freelance web design business with no experience from home (or anywhere). A 4,300+ word article with actionable tips
+                    </p>
+                    <Link to='/register' className='btn btn__link__red'>Read Article</Link>
+               </div>
+               <div className='blog'>
+                    <img className='blog__img' src={blogImg} alt='how to start freelancing' />
+                    <h3 className='blog__title'>
+                    How to Start Freelancing as a Web Developer in 2021
+                    </h3>
+                    <p className='blog__intro pb-s'>
+                    A detailed guide on how to become a successful freelance web developer as a beginner in 2021 and beyond. All you need to know...
+                    </p>
+                    <Link to='/register' className='btn btn__link__red'>Read Article</Link>
+               </div>
+          </div>
+          </section>
            
 
           

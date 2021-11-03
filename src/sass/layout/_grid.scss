@@ -39,14 +39,14 @@
 .grid3{
      display: grid;
      grid-template-columns: 1fr;
-     row-gap: 12rem;
+     row-gap: 2rem;
 
      @include respond(tab-land){
           grid-template-columns: repeat(3, 1fr);
           column-gap: 6rem;
-          row-gap: 10rem;
+          row-gap: 3rem;
      }
      @include respond (desktop){
-          row-gap: 5rem;
+          row-gap: 4rem;
      }
 }

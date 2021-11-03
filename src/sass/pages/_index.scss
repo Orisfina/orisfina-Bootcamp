@@ -121,6 +121,11 @@
 .doKnowImg{
      width: 100%;
      height: auto;
+     display: none;
+
+     @include respond(desktop){
+          display: block;
+     }
 }
  .text{
       position: relative;
