@@ -1,11 +1,10 @@
 .project-box{
-
     &__img{
         border-radius: 5%;
         object-fit: fill;
-
-        @include respond(phone-m){
-            width: 85vw;
+        max-width: 80vw;
+        @include respond(desktop){
+            max-width: 25vw;
         }
     }
 
@@ -14,6 +13,8 @@
         // padding: 1rem;
         @include respond(tab-land){
             font-size: 1.6rem;
+            line-height: 2.5rem;
+            text-align: left;
         }  
     }
 }

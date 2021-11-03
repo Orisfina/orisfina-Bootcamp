@@ -9,7 +9,19 @@
           column-gap: 9rem;
      }
 }
+.grid21{
+     display: grid;
+     grid-template-columns: 1fr;
+     row-gap: 4rem;
+     
 
+     @include respond(tab-land){
+          grid-template-columns: 2fr 1fr;
+          column-gap: 2rem;
+          justify-content: center;
+          text-align: left;
+     }
+}
 .grid1-2{
      display: grid;
      grid-template-columns: 1fr;
@@ -35,6 +47,6 @@
           row-gap: 10rem;
      }
      @include respond (desktop){
-          row-gap: 4rem;
+          row-gap: 5rem;
      }
 }

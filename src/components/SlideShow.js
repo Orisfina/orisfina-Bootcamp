@@ -13,13 +13,13 @@ function SlideShow() {
           <section className='slideshow-main container flex a-i-center'>
                <div className="slideshow__textBox">
                      <h2 className="title white pb-s">
-                         Get Equipped with the <br />Latest I.T Skill
+                         Learning the easy Way
                      </h2>
                      <h1 className="slideshow__desc pb-m white">
                           Get all the training needed to become a Web Developer,  <br /> UI/UX Designer or Graphic Designer from Scratch. <span className="break"> <br />We've got all it takes!</span> 
                      </h1> 
 
-                   <Button cName='btn btn__yellow' text='Read More' />
+                   <Button cName='btn btn__yellow' text='Learn Free' />
                 </div> 
 
                { /*

@@ -52,6 +52,77 @@
           display: inline;
           width: 10vh; 
       }
-      
-      
+ }
+
+ .text-section {
+     background: #fff;
+     padding: 4rem 2rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+
+     &__courses{
+          border-radius: 2rem;
+
+          &:hover{
+               background-color: $yellow;
+               color: $white;
+               transition: all 1s;
+               transform: translate(-1rem, .5rem);
+          }
+     
+     }
+ }
+
+ /* .testimonial{
+      &__userRole{
+           color: #ca8f20;
+      }
+     &_text{
+          text-align: center;
+          line-height: 2.3rem;
+     }
+     &__box{
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+     &--img{
+          height: 15rem;
+          width: auto;
+          border-radius: 50%;
+          background-color: #490808;
+          position: absolute;
+          top: -7rem;
+     }
+
+     &--text{
+          background-color: #232EFF;
+          color: #f3f3f3;
+          font-size: 1.4rem;
+          padding: 9rem 1rem 2rem 1rem;
+          border-radius: 3rem;
+          width: 20.5vw;
+     }
+}
+ } */
+
+ .application{
+      position: relative;
+      background-image: url('/src/images/students.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+ }
+.doKnowImg{
+     width: 100%;
+     height: auto;
+}
+ .text{
+      position: relative;
+      z-index: 100
  }
