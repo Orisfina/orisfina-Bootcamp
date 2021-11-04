@@ -723,6 +723,23 @@ h2 span {
   text-align: center; }
 
 /* ------testimonial  close-------*/
+.slideshow-short {
+  background-image: url("/src/images/slideshow-mini.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  height: 30vh;
+  color: #EEF7F8;
+  padding: 8rem 3.5rem;
+  line-height: 3.8rem; }
+  .slideshow-short__title {
+    font-size: 3.6rem;
+    color: #EEF7F8;
+    font-weight: bolder;
+    text-transform: uppercase; }
+  .slideshow-short .yellow {
+    color: #FEE300; }
+
 .footer {
   background-color: #000D0E;
   text-align: center;
@@ -1078,3 +1095,6 @@ h2 span {
 
 .grid3.a-i-center {
   row-gap: 8rem !important; }
+
+.courses .course_box {
+  margin-top: 3rem; }

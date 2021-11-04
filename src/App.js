@@ -7,13 +7,15 @@
  import {BrowserRouter as Router,   Switch,   Route } from "react-router-dom";
 import Register from './pages/Register';
 import WebDevelopment from './pages/WebDevelopment';
- 
+ import Navbar from './components/NavBar'
+ import Footer from './components/Footer'
 
 
 function App() {
    return (
      <>
           <Router>
+               <Navbar />
                <Switch>
                     <Route path="/about">
                          <About />
@@ -37,6 +39,7 @@ function App() {
                          <Homepage />
                     </Route>
                </Switch>
+               <Footer />
           </Router>
      </>
 

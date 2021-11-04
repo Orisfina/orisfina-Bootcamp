@@ -1,12 +1,20 @@
 import React from 'react'
-import NavBar from '../components/NavBar'
+import {BrowserRouter as Router,   Switch,   Route } from "react-router-dom";
+import OnePost from './OnePost'
 
 function Blog() {
      return (
-          <>
-          <NavBar />
-               <h2>Blog oooo</h2>
-          </>
+          <Router>
+               <>
+                    <h2>Blog oooo</h2>
+                    <Switch>
+                         <Route component ={OnePost} path='/:slug' /> 
+                         <Route path='/blog' exact>
+                              <Blog />
+                         </Route>
+                    </Switch>
+               </>
+          </ Router>
      )
 }
 

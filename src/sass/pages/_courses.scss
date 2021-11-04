@@ -1,0 +1,11 @@
+.courses{
+        & .course{
+            &_box{
+                margin-top: 3rem;
+            }
+            &_title{
+                padding-bottom: 2rem;
+            }
+        }
+        
+}

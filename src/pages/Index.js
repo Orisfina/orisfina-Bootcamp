@@ -1,5 +1,4 @@
 import React from 'react'
-import NavBar from '../components/NavBar'
 import ProjectBox from '../components/ProjectBox';
 import DoYouKnow from '../images/Coding _Monochromatic.png'
 import SlideShow from '../components/SlideShow';
@@ -19,7 +18,6 @@ function Index() {
      return (
           <>
           <div className="header">
-           <NavBar /> 
           <SlideShow />
            {/* <div className="slideshow__bar t-center"><p>Trusted by Thousands of Developers</p> </div> */}
            </div>
