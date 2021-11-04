@@ -61,6 +61,9 @@
      justify-content: center;
      align-items: center;
 
+     & .tertiary-header{
+          color: $primary-color-dark;
+     }
      @include respond(desktop){
           padding: 4rem 2rem;
      }

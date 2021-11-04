@@ -20,7 +20,7 @@
     align-content: center;
     font-size: 1.3rem;
 
-        @include respond(tab-land){
+        @include respond(tab){
             font-size: 1.6rem;
         }
     &__heading{
@@ -45,6 +45,16 @@
     & .followUs, .contactUs
     {
         justify-self: flex-start;
+        padding: 0 2rem;
+
+        @include respond(tab){
+            padding: 0 5rem;
+        }
+
+        @include respond(desktop){
+            justify-self: center;
+            padding: 0;
+        }
         
      @include respond(tab-land){
         justify-self: center;

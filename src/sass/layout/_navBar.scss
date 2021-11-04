@@ -63,10 +63,10 @@
    
    .navbar img {
       height: 3.7rem;
+      width: auto;
      @include respond(desktop){
       height: 5rem;
-      width: auto;
-     justify-self: flex-start;
+      justify-self: flex-start;
     }
    }
    

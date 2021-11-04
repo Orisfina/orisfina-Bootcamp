@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
     let cYear = new Date().getFullYear();
     return (
-		<div>
+		<>
         <section className="subFooter container">
 			<div className="grid3 grid3-footer">
 				<div className="followUs">
@@ -73,7 +73,7 @@ function Footer() {
                  <span id='copyrightYear'> {cYear}</span>. 
                  Orisfina Bootcamp. All rights Reserved
             </p>
-		</div>
+		</>
     )
 }
 

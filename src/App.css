@@ -742,7 +742,7 @@ h2 span {
   align-items: center;
   align-content: center;
   font-size: 1.3rem; }
-  @media (min-width: 56.25em) {
+  @media (min-width: 37.5em) {
     .subFooter {
       font-size: 1.6rem; } }
   .subFooter__heading {
@@ -760,7 +760,15 @@ h2 span {
     text-decoration: none;
     color: #EEF7F8; }
   .subFooter .followUs, .subFooter .contactUs {
-    justify-self: flex-start; }
+    justify-self: flex-start;
+    padding: 0 2rem; }
+    @media (min-width: 37.5em) {
+      .subFooter .followUs, .subFooter .contactUs {
+        padding: 0 5rem; } }
+    @media (min-width: 75em) {
+      .subFooter .followUs, .subFooter .contactUs {
+        justify-self: center;
+        padding: 0; } }
     @media (min-width: 56.25em) {
       .subFooter .followUs, .subFooter .contactUs {
         justify-self: center; } }
@@ -769,7 +777,7 @@ h2 span {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 4rem; }
-  @media (min-width: 56.25em) {
+  @media (min-width: 37.5em) {
     .grid2 {
       grid-template-columns: repeat(2, 1fr);
       column-gap: 9rem; } }
@@ -778,7 +786,7 @@ h2 span {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 4rem; }
-  @media (min-width: 56.25em) {
+  @media (min-width: 75em) {
     .grid21 {
       grid-template-columns: 2fr 1fr;
       column-gap: 2rem;
@@ -789,7 +797,7 @@ h2 span {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 4rem; }
-  @media (min-width: 56.25em) {
+  @media (min-width: 75em) {
     .grid1-2 {
       grid-template-columns: 1fr 3fr;
       column-gap: 2rem;
@@ -803,7 +811,12 @@ h2 span {
   .grid3.blog__grid3 {
     display: grid;
     row-gap: 8rem !important; }
-  @media (min-width: 56.25em) {
+  @media (min-width: 37.5em) {
+    .grid3 {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 6rem;
+      row-gap: 3rem; } }
+  @media (min-width: 75em) {
     .grid3 {
       grid-template-columns: repeat(3, 1fr);
       column-gap: 6rem;
@@ -856,11 +869,11 @@ h2 span {
       padding: 1rem 12rem; } }
 
 .navbar img {
-  height: 3.7rem; }
+  height: 3.7rem;
+  width: auto; }
   @media (min-width: 75em) {
     .navbar img {
       height: 5rem;
-      width: auto;
       justify-self: flex-start; } }
 
 .navbar ul {
@@ -995,6 +1008,8 @@ h2 span {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  .text-section .tertiary-header {
+    color: #0087cb; }
   @media (min-width: 75em) {
     .text-section {
       padding: 4rem 2rem; } }
