@@ -137,11 +137,19 @@
      top: 0;
      left: 0;
      background-color: #a8001fbe;
+
+     &__main-color{
+          background-color: rgba($color: $main-color, $alpha: 0.9);
+     }
 }
 .white-bg{
      background: $white;
-     padding: 5rem 4rem;
      margin-bottom: 4rem;
+     padding: 3rem 1.5rem;
+     @include respond(desktop){
+          padding: 5rem 4rem;
+     }
+     
 }
 
 .a-item{

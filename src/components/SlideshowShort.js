@@ -1,16 +1,17 @@
 import React from 'react'
 
-function SlideshowShort() {
+function SlideshowShort(props) {
+    const {title, color1, color2, text1, text2} = props;
     return (
         <>
             <div className='container slideshow-short'>
                 <div className='text-content'>
                     <h1 className='slideshow-short__title'>
-                        Our Courses
+                        {title}
                     </h1>
                     <h3 className='slideshow-short__subTitle'>
-                        <span className='yellow'>ONLINE  </span> AND  
-                        <span className='yellow'> ONSITE</span> TRAINING
+                        <span className='yellow'>{color1} </span> {text1} 
+                        <span className='yellow'> {color2} </span>{text2}
                     </h3>
                 </div>
                 <div className='bg-overlay__mini'></div>

@@ -32,7 +32,7 @@ function App() {
                     <Route path="/contact-us">
                          <Contact />
                     </Route>
-                    <Route path="/webdevelopment">
+                    <Route path="/web-development">
                          <WebDevelopment />
                     </Route>
                     <Route path="/" exact>

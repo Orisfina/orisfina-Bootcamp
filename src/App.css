@@ -210,11 +210,16 @@ h2 span {
   top: 0;
   left: 0;
   background-color: #a8001fbe; }
+  .bg-overlay__main-color {
+    background-color: rgba(3, 62, 66, 0.9); }
 
 .white-bg {
   background: #EEF7F8;
-  padding: 5rem 4rem;
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem;
+  padding: 3rem 1.5rem; }
+  @media (min-width: 75em) {
+    .white-bg {
+      padding: 5rem 4rem; } }
 
 .a-item {
   align-items: start !important; }
@@ -271,9 +276,12 @@ h2 span {
     .btn__link__red {
       background-color: #FF4040;
       color: #EEF7F8;
-      transition: 1s all; }
+      transition: 1.5s all;
+      font-weight: bold; }
       .btn__link__red:hover {
-        background-color: #123277; }
+        background-color: #eef7f8;
+        color: #033E42;
+        border: 0.3rem solid #033E42; }
   .btn__red {
     background-color: #FF4040;
     color: #EEF7F8; }
@@ -296,6 +304,17 @@ h2 span {
     border-radius: 6.8rem; }
     .btn__yellow:hover {
       background-color: #f1b826; }
+
+.course_btn {
+  background-color: #F5FAFB;
+  box-shadow: 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  padding: 1rem 2rem;
+  width: 100%;
+  border: 0.1px solid #03C1CD;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.3rem; }
 
 .slideshow-main {
   height: 83.5vh;
@@ -330,7 +349,7 @@ h2 span {
               , #EE7752, #E73C7E, #23A6D5, #23D5AB); */
     background-size: 400% 400%;
     animation: gradbar 15s ease infinite;
-    color: #000D0E;
+    color: #EEF7F8;
     padding: 1rem; }
     @media (min-width: 75em) {
       .slideshow__bar {
@@ -733,14 +752,34 @@ h2 span {
   height: 30vh;
   color: #EEF7F8;
   padding: 8rem 3.5rem;
-  line-height: 3.8rem; }
+  line-height: 3.8rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  @media (min-width: 75em) {
+    .slideshow-short {
+      background-size: cover;
+      height: 55vh;
+      padding: 8rem 13rem; } }
   .slideshow-short__title {
-    font-size: 3.6rem;
+    font-size: 3.2rem;
     color: #EEF7F8;
     font-weight: bolder;
     text-transform: uppercase; }
+    @media (min-width: 75em) {
+      .slideshow-short__title {
+        font-size: 5rem; } }
+  .slideshow-short__subTitle {
+    font-size: 1.4rem; }
+    @media (min-width: 75em) {
+      .slideshow-short__subTitle {
+        font-size: 1.7rem;
+        padding-top: 1rem; } }
   .slideshow-short .yellow {
-    color: #FEE300; }
+    color: #FEE300 !important; }
+
+.yellow {
+  color: #FEE300; }
 
 .footer {
   background-color: #000D0E;
@@ -1098,8 +1137,59 @@ h2 span {
 .grid3.a-i-center {
   row-gap: 8rem !important; }
 
+.subHeading {
+  font-size: 1.8rem; }
+
+.slideshow-short__subTitle {
+  line-height: 2rem; }
+
+ul {
+  list-style: none; }
+
+.main-color {
+  color: #033E42; }
+  .main-color__bg {
+    color: #EEF7F8;
+    background-color: #033E42; }
+
 .courses .course_box {
-  margin-top: 3rem; }
+  margin-top: 9rem; }
 
 .courses .course_title {
   padding-bottom: 2rem; }
+
+.courses {
+  display: grid;
+  grid-template-columns: 1fr; }
+  @media (min-width: 75em) {
+    .courses {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 13rem; } }
+
+.p-xy {
+  padding: 1rem; }
+
+.course_heading {
+  font-size: 1.4rem; }
+  @media (min-width: 75em) {
+    .course_heading {
+      font-size: 4.8rem;
+      font-weight: bolder;
+      line-height: 5.5rem; } }
+
+.course_heading2 {
+  font-size: 1.6rem;
+  text-align: left;
+  text-transform: uppercase; }
+  @media (min-width: 75em) {
+    .course_heading2 {
+      font-size: 3rem;
+      font-weight: bolder;
+      line-height: 4rem; } }
+
+.mb-s > li {
+  padding: .4rem 0; }
+
+.course_sub-heading {
+  text-transform: uppercase;
+  font-size: 1.2rem; }

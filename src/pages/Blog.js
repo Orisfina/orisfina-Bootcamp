@@ -5,7 +5,7 @@ function Blog() {
      return (
           <Router>
                <>
-                    <h2>Blog oooo</h2>
+                    <h2 className='main-color t-center mt-l mb-l'>Loading...</h2>
                     <Switch>
                          {/* <Route component ={OnePost} path='/:slug' /> 
                          <Route path='/blog' exact>
