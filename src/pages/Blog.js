@@ -1,6 +1,5 @@
 import React from 'react'
-import {BrowserRouter as Router,   Switch,   Route } from "react-router-dom";
-import OnePost from './OnePost'
+import {BrowserRouter as Router,   Switch } from "react-router-dom";
 
 function Blog() {
      return (
@@ -8,10 +7,10 @@ function Blog() {
                <>
                     <h2>Blog oooo</h2>
                     <Switch>
-                         <Route component ={OnePost} path='/:slug' /> 
+                         {/* <Route component ={OnePost} path='/:slug' /> 
                          <Route path='/blog' exact>
                               <Blog />
-                         </Route>
+                         </Route> */}
                     </Switch>
                </>
           </ Router>

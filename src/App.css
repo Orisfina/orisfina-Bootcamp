@@ -298,7 +298,7 @@ h2 span {
       background-color: #f1b826; }
 
 .slideshow-main {
-  height: 85vh;
+  height: 83.5vh;
   background-image: url("/src/images/oci-slide-banner.jpg");
   background-position: center;
   background-size: cover;
@@ -324,12 +324,14 @@ h2 span {
       .slideshow__desc {
         font-size: 2rem; } }
   .slideshow__bar {
-    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background: linear-gradient(-45deg, #166C4D, #EEF7F8, #166C4D, #FEE300);
+    /* background: linear-gradient(
+              -45deg
+              , #EE7752, #E73C7E, #23A6D5, #23D5AB); */
     background-size: 400% 400%;
     animation: gradbar 15s ease infinite;
-    color: #EEF7F8;
-    padding: 1rem;
-    margin-top: 11rem; }
+    color: #000D0E;
+    padding: 1rem; }
     @media (min-width: 75em) {
       .slideshow__bar {
         margin-top: 0; } }
@@ -1098,3 +1100,6 @@ h2 span {
 
 .courses .course_box {
   margin-top: 3rem; }
+
+.courses .course_title {
+  padding-bottom: 2rem; }

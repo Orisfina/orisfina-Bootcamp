@@ -3,14 +3,12 @@ import ProjectBox from '../components/ProjectBox';
 import DoYouKnow from '../images/Coding _Monochromatic.png'
 import SlideShow from '../components/SlideShow';
 import Button from '../components/Button';
-import Footer from '../components/Footer';
 import best from '../images/slide-1.jpg'
 import knowledge from '../images/knowledge.svg'
 import roadmap from '../images/roadmap.svg'
 import jobReady from '../images/job-ready.svg'
 import projects from '../projects'
 import Testimonial from '../components/Testimonial';
-import { Link } from 'react-router-dom';
 import blogImg from '../images/portfolio-website-tips-freelance-developer.jpg'
 
 function Index() {
@@ -19,7 +17,6 @@ function Index() {
           <>
           <div className="header">
           <SlideShow />
-           {/* <div className="slideshow__bar t-center"><p>Trusted by Thousands of Developers</p> </div> */}
            </div>
 
            {/* What we about Section */}
@@ -108,7 +105,7 @@ function Index() {
                                    internal links. 
                                    You will learn the fundamentals of structuring a webpage layout using HTML5 and CSS3 so that you can create responsive and beautiful websites from scratch. 
                              </p> */}
-                             <Button cName='btn btn__link__red flex mt-s' text='Read More' />
+                             <Button cName='btn btn__link__red flex mt-s' text='Read More' link='frontend-development' />
                     </div>
 
                     <div className="text-section text-section__courses">
@@ -119,7 +116,7 @@ function Index() {
                             {/*  <p className='t-justify'>
                                    Master the fundamental skills needed to design visually appealing designs. In this course, you will be expose to Hands-on projects that will improve your portfolio.
                              </p> */}
-                             <Button cName='btn btn__link__red flex mt-s' text='Read More' />
+                             <Button cName='btn btn__link__red flex mt-s' text='Read More' link='graphic-design' />
                     </div>
                               
                     <div className="text-section text-section__courses">
@@ -134,7 +131,7 @@ function Index() {
                               enable the user-facing side of the 
                               website to exist. 
                          </p> */}
-                         <Button cName='btn btn__link__red flex mt-s' text='Read More' />
+                         <Button cName='btn btn__link__red flex mt-s' text='Read More' link='backend-development' />
                     </div>
 
                     <div className="text-section text-section__courses">
@@ -145,7 +142,7 @@ function Index() {
                          {/* <p className='t-justify'>
                              Learn the basis of Search Engine optimization (SEO) and increase organic traffic of your site / blog. Offer your skills to potential client while you make money. The course is opened to everyone.
                          </p> */}
-                         <Button cName='btn btn__link__red flex mt-s' text='Read More' />
+                         <Button cName='btn btn__link__red flex mt-s' text='Read More' link='seo'/>
                     </div>
                      <div className="text-section text-section__courses">
                     <i className="pb-s fas fa-desktop fa-3x  icon-color" aria-hidden="true"></i>
@@ -158,7 +155,7 @@ function Index() {
                               for our success and ensuring customer 
                               satisfaction and loyalty.
                          </p> */}
-                         <Button cName='btn btn__link__red flex mt-s' text='Read More' />
+                         <Button cName='btn btn__link__red flex mt-s' text='Read More' link='uiux' />
                     </div> 
 
                     <div className="text-section text-section__courses">
@@ -169,7 +166,7 @@ function Index() {
                          {/* <p className='t-justify'>
                                    This course gives you all the training needed to increase your typing speed, create beautiful powerpoint slides and also perform calculations in Microsoft Excel. Our Syllabus is tailored to get you going irrespective of who you are.
                          </p> */}
-                         <Button cName='btn btn__link__red flex mt-s' text='Read More' />
+                         <Button cName='btn btn__link__red flex mt-s' link='application-package' text='Read More' />
                     </div>
                   
                </div> 
@@ -190,7 +187,7 @@ function Index() {
                               a career in web development. This is the reason why our Syllabus are tailored 
                               to helping you become one in just 12 Weeks
                          </p> 
-                         <Button cName='btn btn__link__red flex mt-s' text='Start Free Trial' />
+                         <Button cName='btn btn__link__red flex mt-s' text='Start Free Trial' link='/register' />
                      </div>
                      <div>
                           <img src={DoYouKnow} alt='Becoming a web developer has never been so easy in the past like this. Get all you need to know at Orisfina bootcamp and become a web developer easily' className='doKnowImg '/>
@@ -205,7 +202,7 @@ function Index() {
                     <p className='primary__text pb-m'>
                     Application for our 12-weeks bootcamp for all courses starting <span className='primary-color'> November 25th, 2021</span> is now open
                     </p>
-                    <Link to='/register' className='btn btn__link__red mt-l'>Apply Now </Link>
+                    <Button cName='btn btn__link__red mt-l' text='Apply Now' link='/register' />
                </div>
                </div>
                <div className='bg-overlay'></div>
@@ -223,7 +220,7 @@ function Index() {
                     <p className='blog__intro pb-s'>
                     How to build a winning Portfolio Website as a Freelance Developer. All you need to know.
                     </p>
-                    <Link to='/register' className='btn btn__link__red'>Read Article</Link>
+                    <Button cName='btn btn__link__red' link='/register' text='Read Article' />
                </div>
                <div className='blog'>
                     <img className='blog__img' src={blogImg} alt='how to start freelancing' />
@@ -234,7 +231,7 @@ function Index() {
                     <p className='blog__intro pb-s'>
                     Here's how to start a freelance web design business with no experience from home (or anywhere). A 4,300+ word article with actionable tips
                     </p>
-                    <Link to='/register' className='btn btn__link__red'>Read Article</Link>
+                    <Button cName='btn btn__link__red' text='Read Article' link='/register' />
                </div>
                <div className='blog'>
                     <img className='blog__img' src={blogImg} alt='how to start freelancing' />
@@ -244,15 +241,10 @@ function Index() {
                     <p className='blog__intro pb-s'>
                     A detailed guide on how to become a successful freelance web developer as a beginner in 2021 and beyond. All you need to know...
                     </p>
-                    <Link to='/register' className='btn btn__link__red'>Read Article</Link>
+                    <Button cName='btn btn__link__red' link='/register' text='Read Article' />
                </div>
           </div>
           </section>
-           
-
-          
-
-           <Footer />
            </>
      )
 }

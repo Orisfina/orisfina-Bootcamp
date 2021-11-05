@@ -1,5 +1,5 @@
 .slideshow-main{
-    height: 85vh;
+    height: 83.5vh;
     background-image:url('/src/images/oci-slide-banner.jpg');
     background-position: center;
     background-size: cover;
@@ -11,7 +11,6 @@
     background-image: url('./images/bubbles.png');
     padding: 0rem 2rem;
     background-repeat: no-repeat;
-
     @include respond(tab-land){
          padding: 0rem 5rem;
     }
@@ -33,15 +32,17 @@
 
 
      &__bar{
-         background: linear-gradient(
+          background: linear-gradient(
               -45deg
-              , #EE7752, #E73C7E, #23A6D5, #23D5AB);
+              , $tertiary-color, $white, $dark-green, $yellow);
+         /* background: linear-gradient(
+              -45deg
+              , #EE7752, #E73C7E, #23A6D5, #23D5AB); */
                   background-size: 400% 400%;
                   animation: gradbar 15s ease infinite;
          // background-color: $black;
-         color: $white;
+         color: $black;
          padding: 1rem;
-         margin-top: 11rem;
          @include respond(desktop){
          margin-top: 0;
          }
