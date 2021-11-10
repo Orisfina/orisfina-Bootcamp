@@ -268,6 +268,10 @@ h2 span {
   outline: none;
   border: none;
   padding: 1.25rem 3.5rem; }
+  .btn_signup {
+    width: 100%;
+    background-color: #0087cb;
+    color: #EEF7F8; }
   .btn__link {
     display: inline-block;
     padding: .7rem 1.5rem;
@@ -1193,3 +1197,25 @@ ul {
 .course_sub-heading {
   text-transform: uppercase;
   font-size: 1.2rem; }
+
+.course-registration {
+  position: relative;
+  margin-top: 5rem; }
+
+.course-header {
+  color: #002D30;
+  line-height: 4rem; }
+
+.form-label {
+  display: block;
+  color: #000f11;
+  font-weight: bold;
+  padding: .6rem 0rem; }
+
+.group-field,
+select {
+  width: 100%;
+  padding: .9rem 1rem; }
+
+.option {
+  padding: 1rem; }

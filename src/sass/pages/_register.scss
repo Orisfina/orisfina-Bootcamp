@@ -1,0 +1,24 @@
+.course-registration{
+    position: relative;
+    margin-top: 5rem;
+}
+.course-header{
+    color: #002D30;
+    line-height: 4rem;
+}
+
+.form-label{
+    display: block;
+    color: lighten($black, 0.5);
+    font-weight: bold;
+    padding: .6rem 0rem;
+}
+
+.group-field,
+select{
+    width: 100%;
+    padding: .9rem 1rem;
+}
+.option{
+    padding: 1rem;
+}
