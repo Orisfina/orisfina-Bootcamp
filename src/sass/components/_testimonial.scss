@@ -33,10 +33,13 @@
     min-height: 375px;
     position: relative;
     background: url(https://i.ibb.co/PTJDkgb/testimonials.jpg);
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 5rem 2rem;
     background-position: center;
         background-size: cover;
+
+        @include respond (desktop){
+          padding: 5rem 10rem;
+        }
 }
 #testimonial4 .carousel-inner:hover{
   cursor: -moz-grab;
@@ -163,13 +166,13 @@
   right: 0;
   bottom: 0;
   padding: 0.7rem;
-  width: 80%;
+  width: 100%;
   margin: auto;
   position: relative;
   text-align: center;
 
   @include respond(tab-land){
-      width: 70%;
+      width: 100%;
       padding: 20px;
 }
 }
@@ -195,18 +198,19 @@
 }
 .testimonial4_slide p {
     color: #ffffff;
-    font-size: 20px;
-    line-height: 1.4;
-    margin: 40px 0 20px 0;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin: -2rem 0 2rem 0;
+
+    @include respond(desktop){
+      margin: 4rem 0 2rem 0;
+    }
 }
 .testimonial4_slide h4 {
-  color: #ffffff;
-  font-size: 22px;
+  color: $yellow;
+  font-size: 2rem;
 }
 
-.testimonial .carousel {
-	padding-bottom:50px;
-}
 .testimonial .carousel-control-next-icon, .testimonial .carousel-control-prev-icon {
     width: 35px;
     height: 35px;
@@ -243,8 +247,13 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transition: -webkit-transform 0.6s ease-in-out;
+  margin-top: 5rem;
   transition: transform 0.6s ease-in-out;
   transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+
+  @include respond(desktop){
+    
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

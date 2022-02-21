@@ -16,16 +16,28 @@
 .t-center{
      text-align: center;
 }
+.t-right{
+     text-align: right;
+}
+.col{
+     flex-direction: column;
+}
+.center{
+     justify-content: center;
+}
+.flex-end{
+     display: flex;
+     justify-content: center;
+}
 .icon-color{
-     color: $red;
+     color: $primary-color;
 }
 .bc-primary-color{
      background-color: $primary-color;
-     color: $white;
+     color: $black;
 }
 .primary-color{
     color: $primary-color;
-    font-style: italic;
 }
 .t-justify{
      text-align: justify;
@@ -102,6 +114,15 @@
      &t-l{
           margin-top: 6rem;
      }
+     &r-s{
+          margin-right: 2rem !important;
+     }
+     &r-m{
+          margin-right: 4rem;
+     }
+     &r-l{
+          margin-right: 6rem;
+     }
 }
 
 .font2rem{
@@ -111,7 +132,7 @@
 .clip-bg{
      -webkit-clip-path: polygon(0 0,100% 0,100% 100%,0 90%);
      clip-path: polygon(0 0,100% 0,100% 100%,0 90%);
-     padding-bottom: 17rem!important;
+     padding-bottom: 17rem!important; 
 }
 
 .uppercase{

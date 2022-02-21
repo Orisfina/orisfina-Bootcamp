@@ -19,15 +19,11 @@
 }
 
 .primary-header{
-     font-size: 4rem;
-     line-height: 1.2;
      color: $yellow;
-     font-family: 'Lato', 'Open Sans', sans-serif;
      text-transform: uppercase;
      @include respond(desktop){
-          font-size:4rem;
-          font-weight: 800;
-          line-height: 1.2;
+          // font-weight: 800;
+          // line-height: 1.2;
      }   
 }
 
@@ -36,17 +32,33 @@ h2 span{
 }
 
 .primary__text{
-     font-size: 2.5rem;
-     line-height: 1.2;
      color: lighten($color: $black, $amount: 1);
-     font-weight: 800;
+     font-size: 3.5rem;
+     text-align: center;
 
      @include respond(desktop){
-          font-size: 3.6rem;
-          line-height: 1.2;
+          font-size: 3.5rem;
+          line-height: 4.4rem;
+          font-weight: 700;
+          text-align: left;
      }   
 }
-
+.tertiary_text{
+     font-family: 'Mulish', sans-serif;
+     font-size: 2.4rem;
+     font-weight: 700;
+     line-height: 3.2rem;
+     margin-bottom: .8rem;
+     color: rgb(15, 16, 27);
+}
+.primary__text2{
+     font-size: 3.5rem;
+     line-height: 1.2;
+     @include respond(desktop){
+          font-size: 4rem;
+          line-height: 4.4rem;
+     }      
+}
 .tertiary-header{
      font-size: 1.6rem;
      text-transform: uppercase;
@@ -57,4 +69,8 @@ h2 span{
      @include respond(desktop){
           text-align: left;
      }
+}
+.block_on_desktop{
+     display: block;
+     color: $black;
 }

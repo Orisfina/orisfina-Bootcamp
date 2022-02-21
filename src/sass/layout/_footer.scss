@@ -18,17 +18,17 @@
     justify-self: center;
     align-items: center;
     align-content: center;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 
         @include respond(tab){
-            font-size: 1.6rem;
+            font-size: 1.5rem;
         }
     &__heading{
         padding-bottom: .7rem;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         @include respond(tab-land){
-            padding-bottom: 2rem;
-            font-size: 1.6rem;
+            padding-bottom: 1rem;
+            font-size: 1.3rem;
         }
     }
     &__list{
@@ -42,10 +42,10 @@
         color:$white;
     }
 
-    & .followUs, .contactUs
+    & .followUs, .contactUs, .about
     {
         justify-self: flex-start;
-        padding: 0 2rem;
+        padding: 0 1rem;
 
         @include respond(tab){
             padding: 0 5rem;
@@ -61,4 +61,8 @@
      }
 
     }
+}
+
+.about-us{
+    line-height: 1.54;
 }

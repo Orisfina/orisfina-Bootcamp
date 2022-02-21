@@ -2,10 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Button = (props) => {
-    const {text, cName,link} = props
+    const {cName,link, children} = props
     return (
         <>
-            <Link className={cName} to={link}>{text}</Link>
+            <Link className={cName} to={link}>{children}</Link>
         </>
     )
 }

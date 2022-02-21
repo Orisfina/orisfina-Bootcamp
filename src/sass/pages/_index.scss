@@ -1,10 +1,10 @@
-.fas{
-     display: flex;
-     justify-content: center;
-     @include respond(tab-land){
-          justify-content: flex-start;
-     }
-}
+// .fas{
+//      display: flex;
+//      justify-content: center;
+//      @include respond(tab-land){
+//           justify-content: flex-start;
+//      }
+// }
 
 // .light{
 //      padding: 8rem 4rem;
@@ -69,61 +69,38 @@
      }
      &__courses{
           border-radius: 2rem;
-          height:27rem;
+          height:25rem;
+          box-shadow: 2px 3px 1px rgb(46, 128, 153);
 
+          &:nth-child(2),
+          &:first-child{
+               height: 40rem;
+               padding: .5rem 2rem;
+
+               @include respond (desktop){
+                    height: 30rem;
+               }
+          }
+          &:nth-child(3),
+          &:last-child{
+               text-align: center;
+               height: 30rem;
+               padding: .5rem 2rem;
+          }
+          &:last-child p{
+               text-align: center;
+          }
           &:hover{
-               background-color: $yellow;
-               color: $white;
-               transition: all 1s;
+               background-color: $white;
+               color: $black;
+               transition: all 2s ease-out;
                transform: translate(-1rem, .5rem);
           }
      
      }
  }
 
- /* .testimonial{
-      &__userRole{
-           color: #ca8f20;
-      }
-     &_text{
-          text-align: center;
-          line-height: 2.3rem;
-     }
-     &__box{
-          position: relative;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
 
-     &--img{
-          height: 15rem;
-          width: auto;
-          border-radius: 50%;
-          background-color: #490808;
-          position: absolute;
-          top: -7rem;
-     }
-
-     &--text{
-          background-color: #232EFF;
-          color: #f3f3f3;
-          font-size: 1.4rem;
-          padding: 9rem 1rem 2rem 1rem;
-          border-radius: 3rem;
-          width: 20.5vw;
-     }
-}
- } */
-
- .application{
-      position: relative;
-      background-image: url('/src/images/students.png');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      background-attachment: fixed;
- }
 .doKnowImg{
      width: 100%;
      height: auto;
@@ -131,6 +108,7 @@
 
      @include respond(desktop){
           display: block;
+          width: 70%;
      }
 }
  .text{
@@ -140,4 +118,41 @@
 
  .grid3.a-i-center {
      row-gap: 8rem !important;
+ }
+ .primary-icon{
+      margin-right: .2rem;
+      font-size: 1.6rem;
+      width: 7.2rem;
+ }
+ .apply-now{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: $white;
+      background-image: url('./images/apply-now.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 10rem 0 5rem 0rem;
+      padding: 5rem 2rem;
+      
+      text-align: center;
+
+      & h2{
+           font-size: 3rem;
+      }
+      & p{
+           padding-top: 1rem;
+           line-height: 1.2;
+      }
+
+      @include respond(desktop){
+          height: 30vh;
+          margin: 20rem 0 5rem 0rem;
+     }
+ }
+ .z-indez-high{
+      z-index: 200;
  }

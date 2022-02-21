@@ -5,9 +5,9 @@ function Footer() {
     return (
 		<>
         <section className="subFooter container">
-			<div className="grid3 grid3-footer">
+			<div className="grid4 grid3-footer">
 				<div className="followUs">
-					<h3 className="subFooter__heading p-b-small uppercase">Follow Us</h3>
+					<h6 className="subFooter__heading p-b-small uppercase">Social Links</h6>
 					<ul>
 						<li className="subFooter__list">
 							<i className="fab fa-youtube"></i>
@@ -29,7 +29,7 @@ function Footer() {
 				</div>
 
 				<div className="contactUs">
-					<h3 className="subFooter__heading p-b-small uppercase m-t-medium">Contact Us</h3>
+					<h6 className="subFooter__heading p-b-small uppercase m-t-medium">Contact Us</h6>
 					<ul>
 						<li className="subFooter__list flex a-i-center">
 							<i className="fas fa-map-marker-alt"></i>
@@ -46,7 +46,7 @@ function Footer() {
 					</ul>
 				</div>
 				<div className="followUs">
-					<h3 className="subFooter__heading p-b-small uppercase">Follow Us</h3>
+					<h6 className="subFooter__heading p-b-small uppercase">Follow Us</h6>
 					<ul>
 						<li className="subFooter__list">
 							<i className="fab fa-youtube"></i>
@@ -65,6 +65,10 @@ function Footer() {
 							<a href="https://www.instagram.com/joshuaoyewole11/" className="subFooter__link">Instagram</a>
 						</li>
 					</ul>
+				</div>
+				<div className='about'>
+					<h6 className='subFooter__heading p-b-small uppercase'>About us</h6>
+					<p className='about-us'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti neque hic minima quia at dolor itaque, unde sequi, magni doloribus mollitia! Provident dolores perspiciatis non fugiat excepturi optio expedita autem quae. Beatae, neque? Id inventore, minus eligendi, at consectetur rerum sapiente eum cupiditate temporibus repellat quasi, omnis pariatur facere deserunt.</p>
 				</div>
 			</div>
 		</section>
