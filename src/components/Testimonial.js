@@ -5,7 +5,7 @@ function Testimonial() {
     return (
         <>
         <section className="testimonial t-center">
-        <h2 className=" primary__text text-center white-heading">
+        <h2 className=" primary__text white-heading">
                 Testimonial
             </h2>
             <div className="grid2 grid2__collapse">

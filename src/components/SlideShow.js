@@ -11,7 +11,7 @@ function SlideShow() {
                                    </div> from scratch
                          </h1>
                          <p className="slideshow__desc">
-                         Become an expert today at building responsive, and attractive websites with our project based system of learning capable of taking you from a complete begineer to a Job ready Level. </p>
+                         Become an expert today at building responsive, and attractive websites with our project based system of learning capable of taking you from a complete beginner to a Job ready Level. </p>
                          <Button link='/register' cName='btn_register'>Join Now</Button>
                     </div>
                     <div className="right">

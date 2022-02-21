@@ -74,22 +74,38 @@
 
           &:nth-child(2),
           &:first-child{
-               height: 40rem;
+               height: 47rem;
                padding: .5rem 2rem;
 
                @include respond (desktop){
+                    height: 34rem;
+               }
+          }
+          &:nth-child(3){
+               text-align: center;
+               height: 38rem;
+               padding: .5rem 2rem;
+
+               @include respond(desktop){
                     height: 30rem;
                }
           }
-          &:nth-child(3),
           &:last-child{
                text-align: center;
-               height: 30rem;
+               height: 40rem;
                padding: .5rem 2rem;
-          }
-          &:last-child p{
+
+               @include respond(desktop){
+                    height: 30rem;
+               }
+          & p{
                text-align: center;
+
+               @include respond (desktop){
+                    text-align: justify;
+               }
           }
+     }
           &:hover{
                background-color: $white;
                color: $black;
@@ -149,7 +165,6 @@
       }
 
       @include respond(desktop){
-          height: 30vh;
           margin: 20rem 0 5rem 0rem;
      }
  }

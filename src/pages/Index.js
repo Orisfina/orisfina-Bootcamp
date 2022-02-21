@@ -19,7 +19,7 @@ function Index() {
            </div>
 
            {/* What we about Section */}
-           <section className="light container">
+           <section className="light container why-section">
                 <h2 className=' primary__text pb-m'>
                 Why Orisfina Bootcamp is the <span className="block_on_desktop">
                     <span>best place</span> for you
@@ -90,6 +90,7 @@ function Index() {
                               <p className='t-left'>
                                    A front-end developer links together the world of design and technology, packaging up the utility of the back end in an inviting way for users to interact with. They take website design files and convert them into HTML, JavaScript (JS) and/or CSS code — the core elements of front-end development. 
                               </p>
+                              <Button cName='btn blog_btn inline-block' link='/frontend-web-development-career'>Read More</Button> 
                          </div>
 
                          </div>   
@@ -107,6 +108,7 @@ function Index() {
                               <p className='t-left'>
                                    Master the fundamental skills needed to design visually appealing designs. In this course, you will be expose to Hands-on projects that will improve your portfolio. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat asperiores accusantium laborum aperiam sit eum aspernatur reprehenderit similique vel dicta?
                               </p>
+                              <Button cName='btn blog_btn inline-block' link='/graphic-design-career'>Read More</Button>
                          </div>    
                     </div>
                </div>  
@@ -122,6 +124,7 @@ function Index() {
                                    <p className='t-left'>
                                         A back-end developer is someone who builds and maintains the technology needed to power the components which enable the user-facing side of the website to exist. 
                                    </p> 
+                                   <Button cName='btn blog_btn inline-block' link='/backend-web-development-career'>Read More</Button>
                               </div>
                          </div>   
                     </div>
@@ -138,6 +141,7 @@ function Index() {
                               <p className='t-justify'>
                                    This course gives you all the training needed to increase your typing speed, create beautiful powerpoint slides and also perform calculations in Microsoft Excel. Our Syllabus is tailored to get you going irrespective of who you are.
                               </p>
+                              <Button cName='btn blog_btn mt-m inline-block' link='/application-package-learning-path'>Read More</Button>
                               </div>
                          </div>
                     </div>
@@ -191,6 +195,7 @@ function Index() {
                 <div className="z-indez-high">
                 <h2>Ready to step up your Career?</h2>
                <p>Application for our 12-weeks bootcamp for all courses starting April 4<sup>th </sup>is now open</p>
+               <Button cName='btn blog_btn inline-block' link='/register'>Enroll Now</Button>
                 </div>
               <div className="bg-overlay"></div>
            </div>

@@ -40,7 +40,6 @@ h2 span{
           font-size: 3.5rem;
           line-height: 4.4rem;
           font-weight: 700;
-          text-align: left;
      }   
 }
 .tertiary_text{
@@ -73,4 +72,14 @@ h2 span{
 .block_on_desktop{
      display: block;
      color: $black;
+}
+
+.why-section .primary__text{
+     text-align: center;
+
+     @include respond(desktop){
+          text-align: left;
+          padding-bottom: 6rem;
+          padding-top: 5rem;
+     }
 }

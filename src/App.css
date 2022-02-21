@@ -83,8 +83,7 @@ h2 span {
     .primary__text {
       font-size: 3.5rem;
       line-height: 4.4rem;
-      font-weight: 700;
-      text-align: left; } }
+      font-weight: 700; } }
 
 .tertiary_text {
   font-family: 'Mulish', sans-serif;
@@ -115,6 +114,14 @@ h2 span {
 .block_on_desktop {
   display: block;
   color: #000D0E; }
+
+.why-section .primary__text {
+  text-align: center; }
+  @media (min-width: 75em) {
+    .why-section .primary__text {
+      text-align: left;
+      padding-bottom: 6rem;
+      padding-top: 5rem; } }
 
 /* UTILITIES CLASS */
 .container {
@@ -263,6 +270,9 @@ h2 span {
 
 .a-item {
   align-items: start !important; }
+
+.inline-block {
+  display: inline-block; }
 
 /* KEYFRAME ANIMATIONS */
 @-webkit-keyframes gradbar {
@@ -1217,17 +1227,30 @@ h2 span {
     height: 25rem;
     box-shadow: 2px 3px 1px #2e8099; }
     .text-section__courses:nth-child(2), .text-section__courses:first-child {
-      height: 40rem;
+      height: 47rem;
       padding: .5rem 2rem; }
       @media (min-width: 75em) {
         .text-section__courses:nth-child(2), .text-section__courses:first-child {
-          height: 30rem; } }
-    .text-section__courses:nth-child(3), .text-section__courses:last-child {
+          height: 34rem; } }
+    .text-section__courses:nth-child(3) {
       text-align: center;
-      height: 30rem;
+      height: 38rem;
       padding: .5rem 2rem; }
-    .text-section__courses:last-child p {
-      text-align: center; }
+      @media (min-width: 75em) {
+        .text-section__courses:nth-child(3) {
+          height: 30rem; } }
+    .text-section__courses:last-child {
+      text-align: center;
+      height: 40rem;
+      padding: .5rem 2rem; }
+      @media (min-width: 75em) {
+        .text-section__courses:last-child {
+          height: 30rem; } }
+      .text-section__courses:last-child p {
+        text-align: center; }
+        @media (min-width: 75em) {
+          .text-section__courses:last-child p {
+            text-align: justify; } }
     .text-section__courses:hover {
       background-color: #EEF7F8;
       color: #000D0E;
@@ -1276,7 +1299,6 @@ h2 span {
     line-height: 1.2; }
   @media (min-width: 75em) {
     .apply-now {
-      height: 30vh;
       margin: 20rem 0 5rem 0rem; } }
 
 .z-indez-high {
