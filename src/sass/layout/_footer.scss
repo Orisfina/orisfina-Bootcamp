@@ -12,7 +12,7 @@
 .subFooter{
     background-color: #19202A;
     color: $white;
-    padding: 6rem 2rem !important;
+    padding: 6rem 2rem;
     justify-content: center;
     justify-items: center;
     justify-self: center;
@@ -22,6 +22,9 @@
 
         @include respond(tab){
             font-size: 1.5rem;
+        }
+        @include respond(desktop){
+            padding: 5rem 10rem !important;
         }
     &__heading{
         padding-bottom: .7rem;
@@ -48,12 +51,12 @@
         padding: 0 1rem;
 
         @include respond(tab){
-            padding: 0 5rem;
+            padding: 0 2rem;
         }
 
         @include respond(desktop){
             justify-self: center;
-            padding: 0;
+            padding: 0 1rem;
         }
         
      @include respond(tab-land){
@@ -65,4 +68,21 @@
 
 .about-us{
     line-height: 1.54;
+    
+}
+
+.about{
+    @include respond(tab){
+    order: -1;
+    width: 100%;
+}
+@include respond(desktop){
+    order: 4;
+    width: 100%;
+}
+}
+.followUs{
+    @include respond(tab){
+        order: 3;
+    } 
 }

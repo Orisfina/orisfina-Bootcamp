@@ -150,7 +150,7 @@ function Index() {
           </section>
           {/* Section Do you know */}
           <section className="light container clip-bg">
-               <div className='grid2'>
+               <div className='grid2 grid1-on-tab'>
                      <div className="text-section a-item">
                          <h2 className="primary__text primary__text2 pb-s">
                          <span className='primary-color'> Distance</span> is no longer a barrier anymore 
@@ -176,7 +176,7 @@ function Index() {
                               <li><i className="fas fa-user-check  mr-s"></i>
                               Community Networking</li>
                          </ul>
-                         <Button cName='btn btn__link__red flex mt-s'  link='/register'>Start Free Trial</Button>
+                         <Button cName='btn btn__link__red flex mt-m'  link='/register'>Start Free Trial</Button>
                      </div>
                      <div className="flex col center ">
                          <div className='flex-end'>

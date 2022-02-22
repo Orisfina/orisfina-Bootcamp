@@ -48,3 +48,10 @@ p{
      line-height: 2.8rem;
      font-family: 'Mulish', sans-serif;
 }
+ .hide-on-mobile{
+      display: none;
+      @include respond(desktop){
+           display: block;
+      }
+ }
+ 

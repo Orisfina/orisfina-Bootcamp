@@ -15,7 +15,7 @@ function SlideShow() {
                          <Button link='/register' cName='btn_register'>Join Now</Button>
                     </div>
                     <div className="right">
-                         <img src={right} alt="orisfina computer institute students smiling" className="slideshow__right" />
+                         <img src={right} alt="orisfina computer institute students smiling" className="slideshow__right hide-on-mobile" />
                     </div>
                     
                </div>

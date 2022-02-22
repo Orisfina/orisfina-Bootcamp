@@ -32,9 +32,17 @@ h2 span{
 }
 
 .primary__text{
+     font-size: 2.5rem;
+     line-height: 1.2;
      color: lighten($color: $black, $amount: 1);
-     font-size: 3.5rem;
      text-align: center;
+
+     @include respond(phone-m){
+          font-size: 3.1rem;
+     }
+     @include respond(tab){
+          font-size: 4rem;
+     }
 
      @include respond(desktop){
           font-size: 3.5rem;
@@ -44,18 +52,30 @@ h2 span{
 }
 .tertiary_text{
      font-family: 'Mulish', sans-serif;
-     font-size: 2.4rem;
+     font-size: 2rem;
      font-weight: 700;
-     line-height: 3.2rem;
+     line-height: 2.5rem;
      margin-bottom: .8rem;
      color: rgb(15, 16, 27);
+
+     @include respond(phone-m){
+          font-size: 2.4rem;
+          line-height: 3.2rem;
+     }
 }
 .primary__text2{
-     font-size: 3.5rem;
+
+     font-size: 2.5rem;
      line-height: 1.2;
-     @include respond(desktop){
+
+     @include respond(phone-m){
+          font-size: 3.1rem;
+     }
+     @include respond(tab){
           font-size: 4rem;
-          line-height: 4.4rem;
+     }
+     @include respond(desktop){
+          line-height: 4.4rem;     
      }      
 }
 .tertiary-header{
@@ -69,10 +89,13 @@ h2 span{
           text-align: left;
      }
 }
-.block_on_desktop{
-     display: block;
-     color: $black;
-}
+.block_on_desktop {
+     display: inline !important    ;
+     @include respond(desktop){
+          display: block !important;
+          color: #000D0E;
+     }
+ }
 
 .why-section .primary__text{
      text-align: center;
