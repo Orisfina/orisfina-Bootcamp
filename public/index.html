@@ -16,6 +16,33 @@
     <title>Learn Web Development from Scratch with Orisfina | OCI</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <form netlify netlify-honeypot="bot-field" hidden name='Registration Form'>
+        
+          <input type='text' name='email' className='group-field' required />
+
+       
+          <input type='text' name='fname' className='group-field' required />
+      
+          <input type='tel' name='tel' className='group-field' required />
+        
+      
+               <label className='form-label'> Sex:</label>
+               <label htmlFor="male">Male</label> 
+               <input type="radio" id="male" name="sex" value="Male" />
+               <label htmlFor="css">Female</label>
+               <input type="radio" id="female" name="sex" value='Female' />   
+        
+               <select name="courses" id="courses">
+               <option value="Frontend Web Development">Frontend Web Development</option>
+               <option value="Backend Web Development">Backend Web Development</option>
+               <option value="Graphics Design">Graphics Design</option>
+               <option value="Application Package">Application Package</option>
+               <option value="Mobile App Development">Mobile App Development</option>
+               <option value="Mobile App Development">Hardware Engineering</option>
+               </select>
+       
+   </form>
+    </div>
   </body>
 </html>

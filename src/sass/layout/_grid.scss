@@ -9,6 +9,9 @@
 
      @include respond(tab){
           grid-template-columns: repeat(2, 1fr);
+          column-gap: 2rem;
+     }
+     @include respond(desktop){
           column-gap: 9rem;
      }
 }

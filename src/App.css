@@ -56,6 +56,12 @@ p {
     .hide-on-mobile {
       display: block; } }
 
+.container-large {
+  padding: 10rem 2rem; }
+  @media (min-width: 75em) {
+    .container-large {
+      padding: 10rem 25rem; } }
+
 .title {
   font-size: 3.2rem;
   line-height: 5rem;
@@ -238,6 +244,15 @@ h2 span {
 
 .mb-l {
   margin-bottom: 6rem; }
+
+.ml-s {
+  margin-left: 2rem; }
+
+.ml-m {
+  margin-left: 4rem; }
+
+.ml-l {
+  margin-left: 6rem; }
 
 .mt-s {
   margin-top: 2rem; }
@@ -716,9 +731,13 @@ h2 span {
   font-size: 1.6rem;
   line-height: 1.5;
   margin: -2rem 0 2rem 0; }
+  @media (min-width: 37.5em) {
+    .testimonial4_slide p {
+      text-align: center; } }
   @media (min-width: 75em) {
     .testimonial4_slide p {
-      margin: 4rem 0 2rem 0; } }
+      margin: 4rem 0 2rem 0;
+      text-align: left; } }
 
 .testimonial4_slide h4 {
   color: #FEE300;
@@ -904,7 +923,7 @@ h2 span {
 .slideshow-short {
   background-image: url("/src/images/slideshow-mini.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center top;
   height: 30vh;
   color: #EEF7F8;
@@ -915,7 +934,6 @@ h2 span {
   flex-direction: column; }
   @media (min-width: 75em) {
     .slideshow-short {
-      background-size: cover;
       height: 55vh;
       padding: 8rem 13rem; } }
   .slideshow-short__title {
@@ -976,7 +994,10 @@ h2 span {
       padding-right: 1rem; }
   .subFooter__link {
     text-decoration: none;
-    color: #EEF7F8; }
+    color: #EEF7F8;
+    transition: all 1s ease; }
+    .subFooter__link:hover {
+      color: #f66666; }
   .subFooter .followUs, .subFooter .contactUs, .subFooter .about {
     justify-self: flex-start;
     padding: 0 1rem; }
@@ -1017,6 +1038,9 @@ h2 span {
   @media (min-width: 37.5em) {
     .grid2 {
       grid-template-columns: repeat(2, 1fr);
+      column-gap: 2rem; } }
+  @media (min-width: 75em) {
+    .grid2 {
       column-gap: 9rem; } }
 
 .grid21 {
@@ -1320,6 +1344,9 @@ h2 span {
       text-align: center;
       height: 40rem;
       padding: .5rem 2rem; }
+      @media (min-width: 37.5em) {
+        .text-section__courses:last-child {
+          height: 38rem; } }
       @media (min-width: 75em) {
         .text-section__courses:last-child {
           height: 30rem; } }
@@ -1346,6 +1373,9 @@ h2 span {
 .text {
   position: relative;
   z-index: 100; }
+  @media (min-width: 75em) {
+    .text {
+      padding-top: 5rem; } }
 
 .grid3.a-i-center {
   row-gap: 8rem !important; }
@@ -1383,6 +1413,9 @@ h2 span {
 
 .subHeading {
   font-size: 1.8rem; }
+  @media (min-width: 75em) {
+    .subHeading {
+      font-size: 2.5rem; } }
 
 .slideshow-short__subTitle {
   line-height: 2rem; }
@@ -1390,17 +1423,31 @@ h2 span {
 ul {
   list-style: none; }
 
+.frontend-img, .backend-img {
+  width: 100%;
+  height: auto; }
+  @media (min-width: 75em) {
+    .frontend-img, .backend-img {
+      width: 60%; } }
+
 .main-color {
   color: #033E42; }
   .main-color__bg {
     color: #EEF7F8;
     background-color: #033E42; }
 
+.courses-section {
+  padding-top: 0 !important; }
+  @media (min-width: 75em) {
+    .courses-section {
+      padding-top: 5rem !important; } }
+
 .courses .course_box {
   margin-top: 9rem; }
 
 .courses .course_title {
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  font-size: 3rem; }
 
 .courses {
   display: grid;
@@ -1414,15 +1461,17 @@ ul {
   padding: 1rem; }
 
 .course_heading {
-  font-size: 1.4rem; }
+  font-size: 2.8rem;
+  line-height: 1.2; }
   @media (min-width: 75em) {
     .course_heading {
-      font-size: 4.8rem;
+      font-size: 4rem;
       font-weight: bolder;
       line-height: 5.5rem; } }
 
 .course_heading2 {
   font-size: 1.6rem;
+  line-height: 1.5;
   text-align: left;
   text-transform: uppercase; }
   @media (min-width: 75em) {
@@ -1436,7 +1485,13 @@ ul {
 
 .course_sub-heading {
   text-transform: uppercase;
-  font-size: 1.2rem; }
+  font-size: 1.4rem; }
+  @media (min-width: 37.5em) {
+    .course_sub-heading {
+      font-size: 1.6rem; } }
+  @media (min-width: 75em) {
+    .course_sub-heading {
+      font-size: 2rem; } }
 
 .course-registration {
   position: relative;

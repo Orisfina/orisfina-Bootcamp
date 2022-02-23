@@ -8,12 +8,20 @@
 }
 
 .courses{
+    &-section{
+        padding-top:0!important;
+
+        @include respond(desktop){
+            padding-top:5rem!important;
+        }
+    }
         & .course{
             &_box{
                 margin-top: 9rem;
             }
             &_title{
                 padding-bottom: 2rem;
+                font-size:3rem
             }
         }
         
@@ -35,15 +43,17 @@
 }
 
 .course_heading{
-    font-size: 1.4rem;
+    font-size: 2.8rem;
+    line-height:1.2;
     @include respond(desktop){ 
-    font-size: 4.8rem;
+    font-size: 4rem;
     font-weight: bolder;
     line-height: 5.5rem;
     }
 }
 .course_heading2{
     font-size: 1.6rem;
+    line-height:1.5;
     text-align: left;
     text-transform: uppercase;
   
@@ -58,5 +68,12 @@
 }
 .course_sub-heading{
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+
+    @include respond(tab){
+        font-size:1.6rem
+    }
+    @include respond(desktop){
+        font-size:2rem
+    }
 }

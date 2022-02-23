@@ -8,7 +8,7 @@ import backend from '../images/backend-girl.png'
     return (
         <>
            <SlideshowShort title='WEB DESIGN'  color1='FRONTEND' color2='BACKEND' text1='AND' text2='TRAINING AVAILABLE' />
-           <main className='container'>
+           <main className='container-large'>
            <h2 className='t-center pb-s pt-m course_heading2 main-color'>
            Choose between becoming a Frontend Web Developer , Backend Developer or a Full Stack Developer
             </h2>
@@ -18,7 +18,7 @@ import backend from '../images/backend-girl.png'
             dynamic websites using a programming language. 
             They take care of the front-end part, i.e. the visual side of the site, unlike the back-end developer. To find out more, you can read this article on developer jobs.
         </p>
-        <img src={frontend} alt='what is frontend web developer role?' className='mt-s mb-l' />
+        <img src={frontend} alt='what is frontend web developer role?' className='frontend-img mt-s mb-l' />
         <h3 className='pb-s'>A front-end developer’s missions typically entails:</h3>
         <ul className='mb-s'>
             <li>- Understanding the project they’re working on to develop the most satisfying features and interfaces for their client.
@@ -40,9 +40,9 @@ import backend from '../images/backend-girl.png'
             </li>
             <li>- Optimizing page load time.</li>
         </ul>
-        <Button link='/register' cName='course_btn p-xy ' text='Apply Now!' />
-        <div className='mb-s' ></div>
-        <Button link='/frontend-development' cName='course_btn p-xy ' text='MORE ABOUT  FRONTEND DEVS' />
+        <Button link='/register' cName='course_btn p-xy mr-s'>Apply Now! </Button>
+         <Button link='/frontend-web-development-career' cName='course_btn p-xy '>MORE ABOUT  FRONTEND ROLE</Button>
+    
         <h2 className='subHeading mt-l'>What is the Back-End Developer role ?</h2>
         <p className='pt-s'>
             Back-end developers are in charge of creating 
@@ -52,7 +52,7 @@ import backend from '../images/backend-girl.png'
             To find out more, you can read this article on 
             developer jobs.
         </p>
-        <img src={backend} alt='What is the Back-End Developer role ' className='mt-s mb-l' />
+        <img src={backend} alt='What is the Back-End Developer role ' className='backend-img mt-s mb-l' />
 
         <h3 className='pb-s'>A Back-end developer’s missions typically entails:</h3>
         <ul className='mb-s'>
@@ -75,11 +75,8 @@ import backend from '../images/backend-girl.png'
             </li>
             <li>- Optimizing page load time.</li>
         </ul>
-
-        <Button link='/register' cName='course_btn p-xy ' text='Apply Now!' />
-        <div className='mb-s' ></div>
-        <Button link='/backend-development' cName='course_btn p-xy ' text='MORE ABOUT  BACKEND DEVS' />
-        <div className='mb-l mt-l' ></div>
+            <Button link='/register' cName='course_btn p-xy mr-s'>Apply Now! </Button>
+            <Button link='/backend-web-development-career' cName='course_btn p-xy '>MORE ABOUT  BACKEND ROLE</Button>
         </main>
         </>
     )

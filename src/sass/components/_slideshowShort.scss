@@ -1,7 +1,7 @@
 .slideshow-short{
     background-image: url('/src/images/slideshow-mini.jpg');
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size:cover;
     background-position: center top;
     height: 30vh;
     color: $white;
@@ -12,7 +12,6 @@
     flex-direction: column;
 
     @include respond(desktop){
-        background-size: cover;
         height: 55vh;
         padding: 8rem 13rem;
 

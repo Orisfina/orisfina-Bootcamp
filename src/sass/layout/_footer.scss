@@ -43,6 +43,11 @@
     &__link{
         text-decoration: none;
         color:$white;
+        transition:all 1s ease;
+
+        &:hover{
+            color:#f66666;
+        }
     }
 
     & .followUs, .contactUs, .about

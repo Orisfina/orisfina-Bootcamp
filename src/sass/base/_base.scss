@@ -54,4 +54,9 @@ p{
            display: block;
       }
  }
- 
+ .container-large{
+     padding:10rem 2rem;
+      @include respond(desktop){
+      padding:10rem 25rem
+ }
+}

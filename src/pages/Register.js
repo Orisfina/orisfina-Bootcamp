@@ -1,18 +1,19 @@
 import React from 'react'
-// import SlideshowShort from '../components/SlideshowShort';
+import SlideshowShort from '../components/SlideshowShort'
 import signup from '../images/signup.svg'
 
 function Register() {
      return (
           <>
-             {/* <SlideshowShort title='Registration Form' color1='KINDLY FILL THE FORM WITH THE APPROPRIATE DETAILS'/> */}
-             <main className='course-registration grid21 container' >
+             <SlideshowShort title='Registration Form' color1='KINDLY FILL THE FORM WITH THE APPROPRIATE DETAILS'/> 
+             <main className='course-registration grid21 container-large' >
                   <div className='reg-image'>
                     <img src={signup} alt='Signup on Orisfina Bootcamp' />
                   </div>
                   <div className='reg-form'>
                        <h1 className='course-header t-center mb-m'>Signup to Orisfina Bootcamp</h1>
-                       <form data-netlify="true" name='Registration Form' method='POST'>
+                       <form name='Registration Form' method='POST'>
+                       <input type="hidden" name="form-name" value="Registration Form" />
                             <div className='form-group'>
                               <label className='form-label'> Email </label>
                               <input type='text' name='email' className='group-field' required />
@@ -29,7 +30,7 @@ function Register() {
                                    <label className='form-label'> Sex:</label>
                                    <label htmlFor="male">Male</label> 
                                    <input type="radio" id="male" name="sex" value="Male" />
-                                   <label htmlFor="css">Female</label>
+                                   <label htmlFor="css" className='ml-s'>Female</label>
                                    <input type="radio" id="female" name="sex" value='Female' />   
                             </div>
                             <div className='form-group'>

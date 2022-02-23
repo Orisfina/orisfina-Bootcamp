@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Footer() {
     let cYear = new Date().getFullYear();
@@ -7,7 +8,7 @@ function Footer() {
         <section className="subFooter container">
 			<div className="grid4 grid3-footer">
 				<div className="followUs">
-					<h6 className="subFooter__heading p-b-small uppercase">Social Links</h6>
+					<h6 className="subFooter__heading p-b-small uppercase">Join us on Social Media</h6>
 					<ul>
 						<li className="subFooter__list">
 							<i className="fab fa-youtube"></i>
@@ -46,29 +47,26 @@ function Footer() {
 					</ul>
 				</div>
 				<div className="followUs">
-					<h6 className="subFooter__heading p-b-small uppercase">Follow Us</h6>
+					<h6 className="subFooter__heading p-b-small uppercase">Career path</h6>
 					<ul>
 						<li className="subFooter__list">
-							<i className="fab fa-youtube"></i>
-							<a href="https://www.youtube.com/channel/UCFVxdmgojHfxOZ8j16UapiA" className="subFooter__link">Youtube</a>
+                            <Link to='/frontend-web-development-career' className='subFooter__link'>Frontend Web Development</Link>
 						</li>
 						<li className="subFooter__list">
-							<i className="fab fa-facebook"></i>
-							<a href="https://web.facebook.com/orisfinacomputerinstitute" target="_blank" rel="noopener noreferrer" className="subFooter__link">Facebook</a>
+                            <Link to='/backend-web-development-career' className='subFooter__link'>Backend Web Development</Link>
 						</li>
 						<li className="subFooter__list">
-							<i className="fab fa-twitter"></i>
-							<a href="https://twitter.com/orisfinacomputerinstitute" className="subFooter__link">Twitter</a>
+							<Link to='/graphic-design-career' className='subFooter__link'>Graphic Design</Link>
 						</li>
 						<li className="subFooter__list">
-							<i className="fab fa-instagram"></i>
-							<a href="https://www.instagram.com/joshuaoyewole11/" className="subFooter__link">Instagram</a>
+							<Link to='/application-package-learning-path' className='subFooter__link'>Application Package</Link>
 						</li>
 					</ul>
 				</div>
 				<div className='about'>
 					<h6 className='subFooter__heading p-b-small uppercase'>About us</h6>
-					<p className='about-us'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti neque hic minima quia at dolor itaque, unde sequi, magni doloribus mollitia! Provident dolores perspiciatis non fugiat excepturi optio expedita autem quae. Beatae, neque? Id inventore, minus eligendi, at consectetur rerum sapiente eum cupiditate temporibus repellat quasi, omnis pariatur facere deserunt.</p>
+					<p className='about-us'>Orisfina Bootcamp is one of the fastest growing bootcamp in Auchi, Edo State Nigeria which provides you with all the mentorship from our Tutors that will take you from a complete begineer to an Advanced level. 
+                    Since Orisfina Bootcamp started in 2019, we've consistently been regarded as one of the best coding bootcamps in Edo State by students and employers.</p>
 				</div>
 			</div>
 		</section>

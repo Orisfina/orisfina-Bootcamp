@@ -14,7 +14,7 @@ function SlideshowShort(props) {
                         <span className='yellow'> {color2} </span>{text2}
                     </h3>
                 </div>
-                <div className='bg-overlay__mini'></div>
+                {/* <div className='bg-overlay__mini'></div> */}
             </div>
         </>
     )

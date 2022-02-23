@@ -8,7 +8,9 @@ import SlideShow from '../components/SlideShow';
 import Button from '../components/Button';
 import projects from '../projects'
 import Testimonial from '../components/Testimonial';
-import blogImg from '../images/portfolio-website-tips-freelance-developer.jpg'
+import blogImg from '../images/how-to-start-freelancing-developer.jpg'
+import blogImg2 from '../images/portfolio-website-tips-freelance-developer.jpg'
+import blogImg3 from '../images/start-freelance-web-design-business.jpg'
 
 function Index() {
    
@@ -191,14 +193,6 @@ function Index() {
            </section>
           {/* Testimonial */}
            <Testimonial />
-           <div className="apply-now">
-                <div className="z-indez-high">
-                <h2>Ready to step up your Career?</h2>
-               <p>Application for our 12-weeks bootcamp for all courses starting April 4<sup>th </sup>is now open</p>
-               <Button cName='btn blog_btn inline-block' link='/register'>Enroll Now</Button>
-                </div>
-              <div className="bg-overlay"></div>
-           </div>
                
           
           {/* BLog */}
@@ -206,14 +200,14 @@ function Index() {
           <h2 className="primary__text primary__text2 pb-l t-center"> Recent Blog Post</h2> 
           <div className='grid3 blog__grid3'>
                <div className='blog'>
-                    <img className='blog__img' src={blogImg} alt='how to start freelancing' />
+                    <img className='blog__img' src={blogImg2} alt='how to start freelancing' />
                     <h3 className='blog__title'>
                     Portfolio Website Tips for Freelance Developers
                     </h3>
                     <p className='blog__intro pb-s'>
                     How to build a winning Portfolio Website as a Freelance Developer. All you need to know.
                     </p>
-                    <Button cName='btn blog_btn' link='/register'>Read Article</Button>
+                    <a className='btn blog_btn' href='https://studywebdevelopment.com/portfolio-tips-freelance-developer.html' target='_blank' rel="noreferrer">Read Article</a>
                </div>
                <div className='blog'>
                     <img className='blog__img' src={blogImg} alt='how to start freelancing' />
@@ -224,17 +218,17 @@ function Index() {
                     <p className='blog__intro pb-s'>
                     Here's how to start a freelance web design business with no experience from home (or anywhere). A 4,300+ word article with actionable tips
                     </p>
-                    <Button cName='btn blog_btn' link='/register'>Read Article</Button> 
+                    <a className='btn blog_btn' href='https://studywebdevelopment.com/start-freelance-web-design-business.html' target='_blank' rel="noreferrer">Read Article</a> 
                </div>
                <div className='blog'>
-                    <img className='blog__img' src={blogImg} alt='how to start freelancing' />
+                    <img className='blog__img' src={blogImg3} alt='how to start freelancing' />
                     <h3 className='blog__title'>
-                    How to Start Freelancing as a Web Developer in 2021
+                    How to Start Freelancing as a Web Developer in 2022
                     </h3>
                     <p className='blog__intro pb-s'>
-                    A detailed guide on how to become a successful freelance web developer as a beginner in 2021 and beyond. All you need to know...
+                    A detailed guide on how to become a successful freelance web developer as a beginner in 2022 and beyond. All you need to know...
                     </p>
-                    <Button cName='btn blog_btn' link='/register'>Read Article</Button>
+                    <a className='btn blog_btn' href='https://studywebdevelopment.com/how-to-start-freelancing-as-developer.html' target='_blank' rel="noreferrer">Read Article</a>
                </div>
           </div>
           </section>

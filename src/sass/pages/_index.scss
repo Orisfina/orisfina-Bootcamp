@@ -95,6 +95,10 @@
                height: 40rem;
                padding: .5rem 2rem;
 
+               @include respond(tab){
+                    height: 38rem;
+               }
+
                @include respond(desktop){
                     height: 30rem;
                }
@@ -129,7 +133,11 @@
 }
  .text{
       position: relative;
-      z-index: 100
+      z-index: 100;
+
+      @include respond(desktop){
+          padding-top:5rem;
+     }
  }
 
  .grid3.a-i-center {

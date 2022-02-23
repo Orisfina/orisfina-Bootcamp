@@ -13,6 +13,7 @@ import WebDevelopment from './pages/WebDevelopment';
 import ApplicationPackage from './pages/ApplicationPackage'
 import GraphicDesign from './pages/GraphicDesign'
 import FrontendDevelopment from './pages/FrontendDevelopment'
+import Testimonial from './components/Testimonial';
 import BackendDevelopment from './pages/BackendDevelopment'
  import Navbar from './components/NavBar'
  import Footer from './components/Footer'
@@ -62,6 +63,9 @@ function App() {
                     </Route>
                     <Route path="/application-package-learning-path">
                          <ApplicationPackage/>
+                    </Route>
+                    <Route path="/testimonial">
+                         <Testimonial />
                     </Route>
                     <Route path="/" exact>
                          <Homepage />
