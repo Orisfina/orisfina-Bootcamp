@@ -17,6 +17,7 @@ import Testimonial from './components/Testimonial';
 import BackendDevelopment from './pages/BackendDevelopment'
  import Navbar from './components/NavBar'
  import Footer from './components/Footer'
+import Success from './pages/Success';
 
 
 function App() {
@@ -66,6 +67,9 @@ function App() {
                     </Route>
                     <Route path="/testimonial">
                          <Testimonial />
+                    </Route>
+                    <Route path="/success">
+                         <Success />
                     </Route>
                     <Route path="/" exact>
                          <Homepage />

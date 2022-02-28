@@ -50,16 +50,16 @@ function Footer() {
 					<h6 className="subFooter__heading p-b-small uppercase">Career path</h6>
 					<ul>
 						<li className="subFooter__list">
-                            <Link to='/frontend-web-development-career' className='subFooter__link'>Frontend Web Development</Link>
+                            <Link to='/frontend-web-development-career' className='subFooter__link'> &gt; Frontend Web Development</Link>
 						</li>
 						<li className="subFooter__list">
-                            <Link to='/backend-web-development-career' className='subFooter__link'>Backend Web Development</Link>
+                            <Link to='/backend-web-development-career' className='subFooter__link'>&gt; Backend Web Development</Link>
 						</li>
 						<li className="subFooter__list">
-							<Link to='/graphic-design-career' className='subFooter__link'>Graphic Design</Link>
+							<Link to='/graphic-design-career' className='subFooter__link'>&gt; Graphic Design</Link>
 						</li>
 						<li className="subFooter__list">
-							<Link to='/application-package-learning-path' className='subFooter__link'>Application Package</Link>
+							<Link to='/application-package-learning-path' className='subFooter__link'>&gt; Application Package</Link>
 						</li>
 					</ul>
 				</div>

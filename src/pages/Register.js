@@ -6,13 +6,13 @@ function Register() {
      return (
           <>
              <SlideshowShort title='Registration Form' color1='KINDLY FILL THE FORM WITH THE APPROPRIATE DETAILS'/> 
-             <main className='course-registration grid21 container-large' >
+             <main className='course-registration grid21 container' >
                   <div className='reg-image'>
                     <img src={signup} alt='Signup on Orisfina Bootcamp' />
                   </div>
                   <div className='reg-form'>
                        <h1 className='course-header t-center mb-m'>Signup to Orisfina Bootcamp</h1>
-                       <form name='Registration Form' method='POST'>
+                       <form name='Registration Form' method='POST' action='/success'>
                        <input type="hidden" name="form-name" value="Registration Form" />
                             <div className='form-group'>
                               <label className='form-label'> Email </label>
@@ -20,7 +20,7 @@ function Register() {
                             </div>
                             <div className='form-group'>
                               <label className='form-label'> Fullnames </label>
-                              <input type='text' name='fname' className='group-field' required />
+                              <input type='text' name='fullnames' className='group-field' required />
                             </div>
                             <div className='form-group'>
                               <label className='form-label'> Phone </label>

@@ -1514,3 +1514,9 @@ select {
 
 .option {
   padding: 1rem; }
+
+.success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }

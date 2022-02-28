@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from './Button'
-// import SlideshowShort from './SlideshowShort'
 import testimonialImg from '../images/betty.jpg'
+import testimonialImg2 from '../images/testifier.jpg'
 
 function Testimonial() {
     return (
@@ -44,10 +44,10 @@ function Testimonial() {
                 <div className="carousel-inner" role="listbox">
                     <div className="carousel-item active">
                         <div className="testimonial4_slide grid1-2">
-                            <img src={testimonialImg } className="img-circle img-responsive" alt='testisfier' />
+                            <img src={testimonialImg2 } className="img-circle img-responsive" alt='testisfier' />
                             <div>
-                            <p className='t-justify'>Joining Orisfina bootcamp was one of the best decisions i took. Their tutors are the best in town as they are always ready to explain in the most simplest  method. They are just so supportive. In less than 6 weeks i started building basic website. I recommend Orisfina bootcamp to anyone seeking to acquire a skill in web design</p>
-                            <h4>Daniel Ehizoje</h4>
+                            <p className='t-justify'>No place like Orisfina Bootcamp. From the very first day i registered till date, i have never had a reason to regret my actions. Irrespective of my zero background in coding, I got tutored in such a way that i felt so so easy to grasp. Right now am creating Softwares i never dreamt of few months ago.</p>
+                            <h4>Ani Hope</h4>
                             </div>
                             
                         </div>
