@@ -46,7 +46,16 @@ section{
 
 p{
      line-height: 2.8rem;
+     font-size: 1.6rem;
      font-family: 'Mulish', sans-serif;
+     @include respond(desktop){
+          font-size: 1.8rem;
+     }
+}
+li{
+     @include respond(desktop){
+          font-size: 1.8rem;
+     } 
 }
  .hide-on-mobile{
       display: none;
@@ -58,5 +67,11 @@ p{
      padding:10rem 2rem;
       @include respond(desktop){
       padding:10rem 25rem
+ }
+}
+.container-large-m{
+     padding:10rem 2rem;
+      @include respond(desktop){
+      padding:10rem 15rem
  }
 }

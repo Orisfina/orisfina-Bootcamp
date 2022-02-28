@@ -16,7 +16,7 @@ import backend from '../images/backend-girl.png'
         <p className='pt-s'>
             Front-end developers are in charge of creating 
             dynamic websites using a programming language. 
-            They take care of the front-end part, i.e. the visual side of the site, unlike the back-end developer. To find out more, you can read this article on developer jobs.
+            They take care of the front-end part, i.e. the visual side of the site, unlike the back-end developer. 
         </p>
         <img src={frontend} alt='what is frontend web developer role?' className='frontend-img mt-s mb-l' />
         <h3 className='pb-s'>A front-end developer’s missions typically entails:</h3>
@@ -48,9 +48,7 @@ import backend from '../images/backend-girl.png'
             Back-end developers are in charge of creating 
             dynamic websites using a programming language. 
             They take care of the front-end part, i.e. the visual
-            side of the site, unlike the back-end developer. 
-            To find out more, you can read this article on 
-            developer jobs.
+            side of the site, unlike the back-end developer.
         </p>
         <img src={backend} alt='What is the Back-End Developer role ' className='backend-img mt-s mb-l' />
 
